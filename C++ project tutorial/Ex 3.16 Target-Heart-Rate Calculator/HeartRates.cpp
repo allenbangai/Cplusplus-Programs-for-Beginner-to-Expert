@@ -12,11 +12,11 @@
  */
 
 #include "HeartRates.h"
-
+/*
 HeartRates::HeartRates() {
 }
 
 
 HeartRates::~HeartRates() {
 }
-
+*/

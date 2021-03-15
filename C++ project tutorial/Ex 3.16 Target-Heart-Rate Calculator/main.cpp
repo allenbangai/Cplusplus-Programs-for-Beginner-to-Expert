@@ -13,7 +13,6 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <HeartRates.h>
 
 using namespace std;
 
