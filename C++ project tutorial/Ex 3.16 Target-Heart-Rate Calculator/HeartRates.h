@@ -21,21 +21,27 @@ using namespace std;
 
 class HeartRates {
 public:
-    HeartRates(string, string, int*);
+    HeartRates(string, string, int*, int*);
     
     void setFirstName(string);
     void setSecondName(string);
     void setDateOfBirth(int*);
+    void setPresentDate(int*);
     
     string getFirstName();
-    string getSeconfname();
+    string getSecondname();
     int *getDateOfBirth();
+    int getAge();
+    int getMaximumHeartRate();
+    int getTargetHeartRate();
     
     virtual ~HeartRates();
 private:
     string firstName;
     string lastName;
-    int *dateOfBirth; // month / day / year
+    int *dateOfBirth;
+    int *presentDate;
+    int age;// month / day / year
 
 };
 

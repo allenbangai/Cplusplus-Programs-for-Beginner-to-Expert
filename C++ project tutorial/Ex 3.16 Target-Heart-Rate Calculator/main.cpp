@@ -11,6 +11,7 @@
  * Created on March 15, 2021, 1:00 AM
  */
 
+#include "HeartRates.h"
 #include <cstdlib>
 #include <iostream>
 
