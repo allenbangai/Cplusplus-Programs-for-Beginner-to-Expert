@@ -5,23 +5,18 @@
  */
 
 /* 
- * File:   main.cpp
+ * File:   HeartRates.cpp
  * Author: DELL
- *
- * Created on March 15, 2021, 1:00 AM
- */
-
-#include <cstdlib>
-#include <iostream>
-#include <HeartRates.h>
-
-using namespace std;
-
-/*
  * 
+ * Created on March 15, 2021, 1:46 AM
  */
-int main(int argc, char** argv) {
 
-    return 0;
+#include "HeartRates.h"
+
+HeartRates::HeartRates() {
+}
+
+
+HeartRates::~HeartRates() {
 }
 
