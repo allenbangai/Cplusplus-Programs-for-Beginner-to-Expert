@@ -50,9 +50,6 @@ int HeartRates::getAge(){
     return presentAge;
 }
 
-
-
-
 HeartRates::~HeartRates() {
 }
 

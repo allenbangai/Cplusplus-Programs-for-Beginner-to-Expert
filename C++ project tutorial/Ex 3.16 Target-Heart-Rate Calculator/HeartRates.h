@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -45,5 +46,5 @@ private:
 
 };
 
-#endif /* HEARTRATES_H */
+#endif HEARTRATES_H
 
