@@ -22,16 +22,22 @@ using namespace std;
 
 class HeartRates {
 public:
-    HeartRates(string, string, int*, int*);
+    HeartRates(string, string, string, int);
     
     void setFirstName(string);
     void setSecondName(string);
-    void setDateOfBirth(int*);
+    void dateOfBirth();
+    void setYearOfBirth(int);
+    void setMonth(int);
+    void setDayOfBirth(int);
     void setPresentDate(int*);
     
     string getFirstName();
     string getSecondname();
-    int *getDateOfBirth();
+    string dateOfBeing();
+    int getYearOfBirth();
+    int getMonth();
+    int getDayOfBirth();
     int getAge();
     int getMaximumHeartRate();
     int getTargetHeartRate();
@@ -40,8 +46,11 @@ public:
 private:
     string firstName;
     string lastName;
-    int *dateOfBirth;
-    int *presentDate;
+    string dateOfBirth;
+    int yearOfBirth;
+    int monthOfBirth;
+    int dayOfBirth;
+    int presentDate;
     int age;// month / day / year
 
 };
