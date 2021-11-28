@@ -12,14 +12,15 @@
  */
 
 #include "HeartRates.h"
-
-HeartRates::HeartRates(string firstName1, string secondName1, int* dateOfBirth1, int* presentDate1) {
+//HeartRates constructor to initialize setters.
+HeartRates::HeartRates(string firstName1, string secondName1, string dateOfBirth1, int presentDate1) {
     setFirstName(firstName1);
     setSecondName(secondName1);
     setDateOfBirth(dateOfBirth1);
-    setPresentDate(presentDate1);
+    setPresentYear(presentDate1);
 }
 
+//creating getter and setter parameters for firstName, secondName, dateOfBirth
 void HeartRates::setFirstName(string firstName1){
     firstName = firstName1;
 }
@@ -34,22 +35,38 @@ string HeartRates::getSecondname(){
     return lastName;
 }
 
-void HeartRates::setDateOfBirth(int* dateOfBirth1){
+void HeartRates::setDateOfBirth(string dateOfBirth1){
     dateOfBirth = dateOfBirth1;
 }
-int* HeartRates::getDateOfBirth(){
+string HeartRates::getDateOfBirth(){
     return dateOfBirth;
 }
 
-void HeartRates::setPresentDate(int* presentDate1){
-    presentDate = presentDate1;
-}
-int HeartRates::getAge(){
-    age = presentDate[3] - dateOfBirth[3];
-    int presentAge = age;
-    return presentAge;
+void HeartRates::setYearOfBirth(int yearOfBirth1){
+    yearOfBirth = yearOfBirth1;
 }
 
+//...setter to get present year...
+void HeartRates::setPresentYear(int presentYear1){
+    presentYear = presentYear1;
+}
+
+//...function to calculate present age of user...
+int HeartRates::getAge(){
+    return presentYear  - yearOfBirth;
+}
+
+//...get maximum heart rate...
+int HeartRates::getMaximumHeartRate(){
+    return 220 - getAge();
+}
+
+//...function to get target heart rate...
+int HeartRates::getTargetHeartRate(){
+    return 0;
+}
+
+//...delete constructor heart rate
 HeartRates::~HeartRates() {
 }
 

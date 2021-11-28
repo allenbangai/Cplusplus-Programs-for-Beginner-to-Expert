@@ -26,18 +26,13 @@ public:
     
     void setFirstName(string);
     void setSecondName(string);
-    void dateOfBirth();
+    void setDateOfBirth(string);
     void setYearOfBirth(int);
-    void setMonth(int);
-    void setDayOfBirth(int);
-    void setPresentDate(int*);
+    void setPresentYear(int);
     
     string getFirstName();
     string getSecondname();
-    string dateOfBeing();
-    int getYearOfBirth();
-    int getMonth();
-    int getDayOfBirth();
+    string getDateOfBirth();
     int getAge();
     int getMaximumHeartRate();
     int getTargetHeartRate();
@@ -48,9 +43,7 @@ private:
     string lastName;
     string dateOfBirth;
     int yearOfBirth;
-    int monthOfBirth;
-    int dayOfBirth;
-    int presentDate;
+    int presentYear;
     int age;// month / day / year
 
 };
