@@ -33,6 +33,7 @@ public:
     
     string getFirstName();
     string getSecondname();
+    string getName();
     string getDateOfBirth();
     int getAge();
     int getMaximumHeartRate();
