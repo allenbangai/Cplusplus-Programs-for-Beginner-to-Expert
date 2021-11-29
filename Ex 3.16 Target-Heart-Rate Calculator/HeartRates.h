@@ -37,7 +37,7 @@ public:
     string getDateOfBirth();
     int getAge();
     int getMaximumHeartRate();
-    float getTargetHeartRate();
+    string getTargetHeartRate();
     
     virtual ~HeartRates();
 private:
@@ -50,5 +50,5 @@ private:
 
 };
 
-#endif HEARTRATES_H
+#endif //HEARTRATES_H
 

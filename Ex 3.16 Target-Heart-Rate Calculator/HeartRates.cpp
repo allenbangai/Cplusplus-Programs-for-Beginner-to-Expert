@@ -35,6 +35,11 @@ string HeartRates::getSecondname(){
     return lastName;
 }
 
+//return a combination of user first and second name
+string HeartRates::getName(){
+    return getFirstName() + " " + getSecondname();
+}
+
 void HeartRates::setDateOfBirth(string dateOfBirth1){
     dateOfBirth = dateOfBirth1;
 }
@@ -62,9 +67,9 @@ int HeartRates::getMaximumHeartRate(){
 }
 
 //...function to get target heart rate...
-float HeartRates::getTargetHeartRate(){
+string HeartRates::getTargetHeartRate(){
     
-    return 0.65*getMaximumHeartRate();
+    return to_string(0.65*getMaximumHeartRate());
 }
 
 //...delete constructor heart rate
