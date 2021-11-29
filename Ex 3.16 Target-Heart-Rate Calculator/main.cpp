@@ -20,10 +20,6 @@ int main(int arg, char** argv) {
     cin>>firstName;
     cout<<endl;
     
-    cout<<"Enter your second name: ";
-    cin>>secondName;
-    cout<<endl;
-    
     cout<<"Enter your day of birth: ";
     cin>>dayOfBirth;
     cout<<endl;
@@ -40,9 +36,9 @@ int main(int arg, char** argv) {
     cin>>presentYear;
     cout<<endl;
     
-    dateOfBirth = to_string(dayOfBirth)+ "/"+to_string(monthOfBirth)+"/"to_string(yearOfBirth);
+    dateOfBirth = to_string(dayOfBirth)+ "/"+to_string(monthOfBirth)+"/"+to_string(yearOfBirth);
     
-    HeartRates heartrate = new HeartRates(firstName, secondName, yearOfBirth, presentYear);
+    HeartRates heartrate(firstName, secondName, dateOfBirth, presentYear);
     heartrate.setPresentYear(yearOfBirth);
     
     return 0;
