@@ -62,8 +62,9 @@ int HeartRates::getMaximumHeartRate(){
 }
 
 //...function to get target heart rate...
-int HeartRates::getTargetHeartRate(){
-    return 0;
+float HeartRates::getTargetHeartRate(){
+    
+    return 0.65*getMaximumHeartRate();
 }
 
 //...delete constructor heart rate

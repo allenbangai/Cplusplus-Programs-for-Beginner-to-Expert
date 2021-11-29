@@ -36,7 +36,7 @@ public:
     string getDateOfBirth();
     int getAge();
     int getMaximumHeartRate();
-    int getTargetHeartRate();
+    float getTargetHeartRate();
     
     virtual ~HeartRates();
 private:
