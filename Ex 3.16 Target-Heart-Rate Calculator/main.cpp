@@ -14,8 +14,11 @@ using namespace std;
  * 
  */
 int main(int arg, char** argv) {
+    //declaration of useful variables
     string firstName, secondName, dateOfBirth;
     int dayOfBirth, monthOfBirth, yearOfBirth, presentYear;
+    
+    //getting useful information form the user
     cout<<"Please enter your first name: ";
     cin>>firstName;
     cout<<endl;
@@ -40,11 +43,15 @@ int main(int arg, char** argv) {
     cin>>presentYear;
     cout<<endl;
     
+    //concat string to get date of birth of user from information proving
     dateOfBirth = to_string(dayOfBirth)+ "/"+to_string(monthOfBirth)+"/"+to_string(yearOfBirth);
     
+    //instating object of class HeartRates and implementing some setter methods
     HeartRates heartrate(firstName, secondName, dateOfBirth, presentYear);
     heartrate.setYearOfBirth(yearOfBirth);
     
+    //...introducing user and getting user max and target heart rate...
+    //...printing output on the console...
     cout<<"Hello Mr "+heartrate.getName()<<endl;
     cout<<"You are born on the "+ heartrate.getDateOfBirth()<<endl;
     cout<<"With a max heart rate of "+ to_string(heartrate.getMaximumHeartRate()) +"bpm ";
