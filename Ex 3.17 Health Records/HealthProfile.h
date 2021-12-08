@@ -22,9 +22,27 @@ using namespace std;
 
 class HealthProfile {
 public:
-    HealthProfile(string firstName, string secondName, string gender, string dateOfBirth) :
-    firstName(firstName), secondName(secondName), gender(gender), dateOfBirth(dateOfBirth) {
-    }
+    //declaring constructor
+    HealthProfile(string firstName, string secondName, string gender,
+            string dateOfBirth, string height, string weight) ;
+
+    string GetDateOfBirth() ;
+    void SetDateOfBirth(string dateOfBirth);
+
+    string GetFirstName();
+    void SetFirstName(string firstName);
+
+    string GetGender();
+    void SetGender(string gender);
+
+    string GetHeight();
+    void SetHeight(string height);
+
+    string GetSecondName();
+    void SetSecondName(string secondName);
+
+    string GetWeight();
+    void SetWeight(string weight);
 
     HealthProfile();
     HealthProfile(const HealthProfile& orig);
@@ -34,7 +52,8 @@ private:
     string secondName;
     string gender;
     string dateOfBirth;
-    string height and
+    string height;
+    string weight;
 };
 
 #endif /* HEALTHPROFILE_H */
