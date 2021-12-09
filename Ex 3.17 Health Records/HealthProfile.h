@@ -48,11 +48,11 @@ public:
     string GetSecondName();
     void SetSecondName(string secondName);
 
-    string GetWeight();
-    void SetWeight(string weight);
+    float GetWeight();
+    void SetWeight(float weight);
 
     /**
-     * Methods for getting user default heath profile data that is 
+     * Methods for getting user default health profile data that is 
      * method to return user age
      * method to return max heart rate
      * method to return body mass index (BMI)
@@ -70,8 +70,9 @@ private:
     string secondName;
     string gender;
     string dateOfBirth;
-    string height;
-    string weight;
+    float height;
+    float weight;
+    int yearOfBirth;
 };
 
 #endif /* HEALTHPROFILE_H */
