@@ -22,10 +22,17 @@ using namespace std;
 
 class HealthProfile {
 public:
+    //empty constructor
+    HealthProfile();
+    
     //declaring constructor
     HealthProfile(string firstName, string secondName, string gender,
             string dateOfBirth, string height, string weight) ;
 
+    /**
+     * Getter and Setter methods for private variable of class Health Profile
+     * @return 
+     */
     string GetDateOfBirth() ;
     void SetDateOfBirth(string dateOfBirth);
 
@@ -44,7 +51,18 @@ public:
     string GetWeight();
     void SetWeight(string weight);
 
-    HealthProfile();
+    /**
+     * Methods for getting user default heath profile data that is 
+     * method to return user age
+     * method to return max heart rate
+     * method to return body mass index (BMI)
+     * 
+     * @param orig
+     */
+    string getAge();
+    string maxHeartRate();
+    string targetHeartRate();
+    string bodyMassIndex();
     HealthProfile(const HealthProfile& orig);
     virtual ~HealthProfile();
 private:
