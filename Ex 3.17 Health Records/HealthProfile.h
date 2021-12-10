@@ -27,7 +27,7 @@ public:
     
     //declaring constructor
     HealthProfile(string firstName, string secondName, string gender,
-            string dateOfBirth, string height, string weight) ;
+            string dateOfBirth, float height, float weight) ;
 
     /**
      * Getter and Setter methods for private variable of class Health Profile
@@ -42,14 +42,17 @@ public:
     string GetGender();
     void SetGender(string gender);
 
-    string GetHeight();
-    void SetHeight(string height);
+    float GetHeight();
+    void SetHeight(float height);
 
     string GetSecondName();
     void SetSecondName(string secondName);
 
     float GetWeight();
     void SetWeight(float weight);
+    
+    int GetYearOfBirth() ;
+    void SetYearOfBirth(int yearOfBirth);
 
     /**
      * Methods for getting user default health profile data that is 

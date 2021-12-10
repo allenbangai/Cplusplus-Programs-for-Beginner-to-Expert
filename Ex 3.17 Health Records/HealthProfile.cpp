@@ -15,7 +15,39 @@
 HealthProfile::HealthProfile() {
 }
 
+HealthProfile::HealthProfile(string firstName, string secondName, string gender, 
+        string dateOfBirth, float height, float weight){
+    SetFirstName(firstName);
+    SetSecondName(secondName);
+    SetGender(gender);
+    SetDateOfBirth(dateOfBirth);
+    SetHeight(height);
+    SetWeight(weight);    
+}
 
+HealthProfile::SetFirstName(string firstName){
+    this->firstName = firstName;
+}
+
+HealthProfile::SetSecondName(string secondName){
+    this->secondName = secondName;
+}
+
+HealthProfile::SetDateOfBirth(string dateOfBirth){
+    this->dateOfBirth = dateOfBirth;
+}
+
+HealthProfile::SetGender(string gender){
+    this->gender = gender;
+}
+
+HealthProfile::SetHeight(float height){
+    this->height = height;
+}
+
+HealthProfile::SetWeight(float weight){
+    this->weight = weight;
+}
 
 HealthProfile::~HealthProfile() {
 }
