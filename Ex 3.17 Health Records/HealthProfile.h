@@ -54,6 +54,7 @@ public:
     int GetYearOfBirth() ;
     void SetYearOfBirth(int yearOfBirth);
 
+    
     /**
      * Methods for getting user default health profile data that is 
      * method to return user age
@@ -63,9 +64,11 @@ public:
      * @param orig
      */
     string getAge();
-    string maxHeartRate();
-    string targetHeartRate();
-    string bodyMassIndex();
+    string getMaxHeartRate();
+    string getTargetHeartRate();
+    string getBodyMassIndex();
+    
+    
     HealthProfile(const HealthProfile& orig);
     virtual ~HealthProfile();
 private:

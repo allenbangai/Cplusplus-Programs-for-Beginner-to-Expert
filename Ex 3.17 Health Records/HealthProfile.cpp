@@ -49,6 +49,45 @@ HealthProfile::SetWeight(float weight){
     this->weight = weight;
 }
 
+HealthProfile::SetYearOfBirth(int yearOfBirth){
+    this->yearOfBirth = yearOfBirth;
+}
+
+HealthProfile::GetFirstName(){
+    return firstName;
+}
+
+HealthProfile::GetSecondName(){
+    return secondName;
+}
+
+HealthProfile::GetGender(){
+    return gender;
+}
+
+HealthProfile::GetDateOfBirth(){
+    return dateOfBirth;
+}
+
+HealthProfile::GetYearOfBirth(){
+    return yearOfBirth;
+}
+
+HealthProfile::GetWeight(){
+    return weight;
+}
+
+HealthProfile::GetHeight(){
+    return height;
+}
+
+HealthProfile::getAge(){
+    return 0;
+}
+
+HealthProfile::getMaxHeartRate(){
+    return
+
 HealthProfile::~HealthProfile() {
 }
 
