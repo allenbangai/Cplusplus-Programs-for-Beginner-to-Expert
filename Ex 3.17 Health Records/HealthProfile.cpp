@@ -94,7 +94,7 @@ HealthProfile::getMaxHeartRate(){
 }
 
 HealthProfile::getTargetHeartRate(){
-    return 0;
+    return to_string(0.65*getMaxHeartRate());
 }
 
 HealthProfile::~HealthProfile() {
