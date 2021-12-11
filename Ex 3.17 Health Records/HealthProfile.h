@@ -63,8 +63,8 @@ public:
      * 
      * @param orig
      */
-    string getAge();
-    string getMaxHeartRate();
+    int getAge();
+    int getMaxHeartRate();
     string getTargetHeartRate();
     string getBodyMassIndex();
     

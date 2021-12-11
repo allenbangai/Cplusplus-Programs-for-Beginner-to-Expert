@@ -58,7 +58,7 @@ HealthProfile::GetFirstName(){
 }
 
 HealthProfile::GetSecondName(){
-    return secondName;
+    return this->secondName;
 }
 
 HealthProfile::GetGender(){
@@ -82,6 +82,18 @@ HealthProfile::GetHeight(){
 }
 
 HealthProfile::getAge(){
+    return 2021 - yearOfBirth;
+}
+
+HealthProfile::getBodyMassIndex(){
+    return to_string(GetWeight() / GetHeight()*GetHeight());
+}
+
+HealthProfile::getMaxHeartRate(){
+    return 220 - getAge();
+}
+
+HealthProfile::getTargetHeartRate(){
     return 0;
 }
 
