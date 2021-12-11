@@ -85,9 +85,6 @@ HealthProfile::getAge(){
     return 0;
 }
 
-HealthProfile::getMaxHeartRate(){
-    return
-
 HealthProfile::~HealthProfile() {
 }
 

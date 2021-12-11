@@ -68,7 +68,6 @@ public:
     string getTargetHeartRate();
     string getBodyMassIndex();
     
-    
     HealthProfile(const HealthProfile& orig);
     virtual ~HealthProfile();
 private:
