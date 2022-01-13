@@ -19,6 +19,7 @@ public:
     Encrypt(const Encrypt& orig);
     virtual ~Encrypt();
 private:
+    int encryptData;
 
 };
 
