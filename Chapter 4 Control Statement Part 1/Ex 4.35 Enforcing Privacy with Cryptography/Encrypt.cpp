@@ -14,6 +14,8 @@
 
 Encrypt::Encrypt() {
 }
+Encrypt::Encrypt() {
+}
 
 Encrypt::Encrypt(const Encrypt& orig) {
 }
