@@ -14,9 +14,18 @@
 
 Encrypt::Encrypt() {
 }
-Encrypt::Encrypt() {
+
+Encrypt::Encrypt(int encryptD) {
+    setEncrypt(encryptD);
 }
 
+Encrypt::setEncrypt(int encryptD){
+    this->encryptData = encryptD;
+}
+
+Encrypt::getEncrypt(){
+    return this->encryptData;
+}
 Encrypt::Encrypt(const Encrypt& orig) {
 }
 

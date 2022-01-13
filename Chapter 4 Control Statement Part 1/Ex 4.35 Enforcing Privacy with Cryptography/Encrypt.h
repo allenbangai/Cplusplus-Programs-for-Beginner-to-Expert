@@ -27,9 +27,11 @@ public:
     
     int encrypt(int );
     int decrypt(int );
+    int getEncrypt();
     virtual ~Encrypt();
 private:
     int encryptData;
+    void setEncrypt(int );
 };
 
 #endif /* ENCRYPT_H */
