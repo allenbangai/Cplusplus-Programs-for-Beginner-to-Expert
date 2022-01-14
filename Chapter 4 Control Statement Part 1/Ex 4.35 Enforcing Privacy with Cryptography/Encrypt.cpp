@@ -26,6 +26,21 @@ Encrypt::setEncrypt(int encryptD){
 Encrypt::getEncrypt(){
     return this->encryptData;
 }
+
+Encrypt::encrypt(int encryptD){
+    string encryptAdd = "";
+    int temp = encryptD;
+    int length = to_string(encryptD).length();
+    while(length > 0){
+        int val = temp/(10^length-1);
+        cout<<"val: "<<val<<endl;
+        val = (val+7)%10;
+    }
+}
+
+Encrypt::decrypt(int decryptD){
+    
+}
 Encrypt::Encrypt(const Encrypt& orig) {
 }
 

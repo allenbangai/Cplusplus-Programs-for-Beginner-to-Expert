@@ -28,10 +28,10 @@ public:
     int encrypt(int );
     int decrypt(int );
     int getEncrypt();
+    void setEncrypt(int );
     virtual ~Encrypt();
 private:
     int encryptData;
-    void setEncrypt(int );
 };
 
 #endif /* ENCRYPT_H */
