@@ -28,20 +28,24 @@ int Encrypt::getEncrypt(){
 }
 
 int Encrypt::encrypt(int encryptD){
-    string encryptAdd = "";
     int temp = encryptD;
     int length = to_string(encryptD).length();
     int i = 0;
-    int encryptArray[length];
+    int encryptArray[length], tempArray[length];
+    
+    //ENCRYPT INT VALUE AND SAVE EACH DIGIT IN AN ARRAY
     while(length > 0){
-        int val = temp/(10^length-1);
-        temp = temp - (val*(10^length-1));
+        int val = temp/(10^(length-1));
+        temp = temp - (val*(10^(length-1)));
         cout<<"val: "<<val<<endl;
         val = (val+7)%10;
         encryptArray[i] = val;
         i++;
-        length;
+        length--;
     }
+    //Swapping encrypted number for further encryption
+    temp
+    
 }
 
 int Encrypt::decrypt(int decryptD){
