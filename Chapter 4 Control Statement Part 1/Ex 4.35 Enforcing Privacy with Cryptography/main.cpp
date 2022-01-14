@@ -11,6 +11,7 @@
  */
 
 #include <cstdlib>
+#include "Encrypt.h"
 
 using namespace std;
 

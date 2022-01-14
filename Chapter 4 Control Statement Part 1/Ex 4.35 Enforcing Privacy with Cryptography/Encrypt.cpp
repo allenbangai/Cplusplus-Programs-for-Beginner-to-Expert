@@ -50,12 +50,13 @@ int Encrypt::encrypt(int encryptD){
     tempArray[2] = encryptArray[0];
     tempArray[3] = encryptArray[1];
     
+    //adding digit in array to an integer with respect to significant values
     temp = 0;
     while(tempLength < 0){
         temp = temp + tempArray[0] * (10^tempLength-1);
         tempLength--;        
     }
-    cout<<"Encypted interger is: "<<temp<<endl;
+    cout<<"Encrypted integer is: "<<temp<<endl;
     
     return temp;
 }
