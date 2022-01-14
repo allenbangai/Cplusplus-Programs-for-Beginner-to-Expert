@@ -31,10 +31,16 @@ int Encrypt::encrypt(int encryptD){
     string encryptAdd = "";
     int temp = encryptD;
     int length = to_string(encryptD).length();
+    int i = 0;
+    int encryptArray[length];
     while(length > 0){
         int val = temp/(10^length-1);
+        temp = temp - (val*(10^length-1));
         cout<<"val: "<<val<<endl;
         val = (val+7)%10;
+        encryptArray[i] = val;
+        i++;
+        length;
     }
 }
 
