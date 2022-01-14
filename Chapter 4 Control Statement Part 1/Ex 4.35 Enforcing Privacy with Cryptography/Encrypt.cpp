@@ -15,17 +15,14 @@
 Encrypt::Encrypt() {
 }
 
-Encrypt::Encrypt(int encryptD) {
-    setEncrypt(encryptD);
+Encrypt::Encrypt(int encryptD, int i) {
+    if(i == 0){
+        encrypt(encryptD);
+    }else{
+        decrypt(encryptD);
+    }
 }
 
-void Encrypt::setEncrypt(int encryptD){
-    this->encryptData = encryptD;
-}
-
-int Encrypt::getEncrypt(){
-    return this->encryptData;
-}
 
 int Encrypt::encrypt(int encryptD){
     int temp = encryptD;
@@ -34,11 +31,15 @@ int Encrypt::encrypt(int encryptD){
     int i = 0;
     int encryptArray[length], tempArray[length];
     
+    cout<<"length: "<<length<<endl;
     //ENCRYPT INT VALUE AND SAVE EACH DIGIT IN AN ARRAY
     while(length > 0){
-        int val = temp/(10^(length-1));
-        temp = temp - (val*(10^(length-1)));
+        cout<<"temp: "<<temp<<endl;
+        int pow = 10^(length);
+        cout<<"pow: "<<pow<<endl;
+        int val = temp/(1000);
         cout<<"val: "<<val<<endl;
+        temp = temp - (val*(1000));
         val = (val+7)%10;
         encryptArray[i] = val;
         i++;

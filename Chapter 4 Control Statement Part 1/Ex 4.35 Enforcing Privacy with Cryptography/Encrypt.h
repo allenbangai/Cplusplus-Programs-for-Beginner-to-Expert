@@ -22,13 +22,11 @@ using namespace std;
 class Encrypt {
 public:
     Encrypt();
-    Encrypt(int );
+    Encrypt(int , int);
     Encrypt(const Encrypt& orig);
     
     int encrypt(int );
     int decrypt(int );
-    int getEncrypt();
-    void setEncrypt(int );
     virtual ~Encrypt();
 private:
     int encryptData;
