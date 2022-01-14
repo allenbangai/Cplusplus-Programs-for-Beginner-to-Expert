@@ -30,6 +30,7 @@ int Encrypt::getEncrypt(){
 int Encrypt::encrypt(int encryptD){
     int temp = encryptD;
     int length = to_string(encryptD).length();
+    int tempLength = length;
     int i = 0;
     int encryptArray[length], tempArray[length];
     
@@ -44,8 +45,19 @@ int Encrypt::encrypt(int encryptD){
         length--;
     }
     //Swapping encrypted number for further encryption
-    temp
+    tempArray[0] = encryptArray[2];
+    tempArray[1] = encryptArray[3];
+    tempArray[2] = encryptArray[0];
+    tempArray[3] = encryptArray[1];
     
+    temp = 0;
+    while(tempLength < 0){
+        temp = temp + tempArray[0] * (10^tempLength-1);
+        tempLength--;        
+    }
+    cout<<"Encypted interger is: "<<temp<<endl;
+    
+    return temp;
 }
 
 int Encrypt::decrypt(int decryptD){
