@@ -31,6 +31,7 @@ public:
 private:
     int encryptData;
     int pow10(int );
+    int arrayToInt(int *);
 };
 
 #endif /* ENCRYPT_H */

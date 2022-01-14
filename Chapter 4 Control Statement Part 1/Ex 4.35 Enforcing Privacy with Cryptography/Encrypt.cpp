@@ -26,7 +26,7 @@ Encrypt::Encrypt(int encryptD, int i) {
 
 int Encrypt::encrypt(int encryptD){
     int temp = encryptD;
-    int length = to_string(encryptD).length();
+    int length = sizeof(encryptD);
     int tempLength = length;
     int i = 0;
     int encryptArray[length], tempArray[length];
@@ -49,24 +49,22 @@ int Encrypt::encrypt(int encryptD){
     tempArray[2] = encryptArray[0];
     tempArray[3] = encryptArray[1];
     
-    //adding digit in array to an integer with respect to significant values
-    temp = 0;
-    i = 0;
-    while(tempLength > 0){
-        int val = tempArray[i]*pow10(tempLength-1);
-        temp = temp + val;
-        cout<<"tempArray[i]: "<<tempArray[i]<<endl;
-        cout<<"temp: "<<temp<<endl;
-        tempLength--; 
-        i++;
-    }
-    cout<<"Encrypted integer is: "<<temp<<endl;
-    
-    return temp;
+    return arrayToInt(tempArray);
 }
 
 int Encrypt::decrypt(int decryptD){
-    int length = to
+    int length = sizeof(decryptD);
+    int tempLength = length;
+    int temp = decryptD;
+    int i = 0;
+    int decryptArr[length], tempArr[length];
+    
+    while(length < 0){
+        
+    }
+    
+    
+    return 0;
 }
 
 int Encrypt::pow10(int pow){
@@ -75,6 +73,24 @@ int Encrypt::pow10(int pow){
         val = val*10;
     }
     return val;
+}
+
+//adding digit in array to an integer with respect to significant values
+int Encrypt::arrayToInt(int tempArray[]){
+    int temp = 0;
+    int i = 0;
+    int length = sizeof(tempArray);//*(&tempArray + 1) - tempArray; 
+    cout<<"length: "<<length<<endl;//sizeof(tempArray)/sizeof(tempArray[0]);
+    while(length > 0){
+        int val = tempArray[i]*pow10(length-1);
+        temp = temp + val;
+        cout<<"tempArray[i]: "<<tempArray[i]<<endl;
+        cout<<"temp: "<<temp<<endl;
+        length--; 
+        i++;
+    } 
+    cout<<"Encrypted integer is: "<<temp<<endl;
+    return temp;
 }
 
 Encrypt::Encrypt(const Encrypt& orig) {
