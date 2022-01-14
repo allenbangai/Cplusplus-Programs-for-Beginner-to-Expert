@@ -30,6 +30,7 @@ public:
     virtual ~Encrypt();
 private:
     int encryptData;
+    int pow10(int );
 };
 
 #endif /* ENCRYPT_H */

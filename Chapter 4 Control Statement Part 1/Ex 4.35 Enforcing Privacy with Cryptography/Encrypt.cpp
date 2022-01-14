@@ -35,12 +35,10 @@ int Encrypt::encrypt(int encryptD){
     //ENCRYPT INT VALUE AND SAVE EACH DIGIT IN AN ARRAY
     while(length > 0){
         cout<<"temp: "<<temp<<endl;
-        int pow = 10^(length);
-        cout<<"pow: "<<pow<<endl;
-        int val = temp/(1000);
-        cout<<"val: "<<val<<endl;
-        temp = temp - (val*(1000));
+        int val = temp/(pow10(length-1));
+        temp = temp - (val*(pow10(length-1)));
         val = (val+7)%10;
+        cout<<"val: "<<val<<endl;
         encryptArray[i] = val;
         i++;
         length--;
@@ -53,9 +51,14 @@ int Encrypt::encrypt(int encryptD){
     
     //adding digit in array to an integer with respect to significant values
     temp = 0;
-    while(tempLength < 0){
-        temp = temp + tempArray[0] * (10^tempLength-1);
-        tempLength--;        
+    i = 0;
+    while(tempLength > 0){
+        int val = tempArray[i]*pow10(tempLength-1);
+        temp = temp + val;
+        cout<<"tempArray[i]: "<<tempArray[i]<<endl;
+        cout<<"temp: "<<temp<<endl;
+        tempLength--; 
+        i++;
     }
     cout<<"Encrypted integer is: "<<temp<<endl;
     
@@ -64,6 +67,14 @@ int Encrypt::encrypt(int encryptD){
 
 int Encrypt::decrypt(int decryptD){
     
+}
+
+int Encrypt::pow10(int pow){
+    int val = 1;
+    for(int i = 0; i < pow; i++){
+        val = val*10;
+    }
+    return val;
 }
 Encrypt::Encrypt(const Encrypt& orig) {
 }
