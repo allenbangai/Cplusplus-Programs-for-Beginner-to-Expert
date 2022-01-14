@@ -66,7 +66,7 @@ int Encrypt::encrypt(int encryptD){
 }
 
 int Encrypt::decrypt(int decryptD){
-    
+    int length = to
 }
 
 int Encrypt::pow10(int pow){
@@ -76,6 +76,7 @@ int Encrypt::pow10(int pow){
     }
     return val;
 }
+
 Encrypt::Encrypt(const Encrypt& orig) {
 }
 
