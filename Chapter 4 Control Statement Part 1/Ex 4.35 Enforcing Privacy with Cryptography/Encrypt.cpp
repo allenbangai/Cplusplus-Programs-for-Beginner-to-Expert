@@ -59,9 +59,26 @@ int Encrypt::decrypt(int decryptD){
     int i = 0;
     int decryptArr[length], tempArr[length];
     
-    while(length < 0){
-        
+    while(length > 0){
+        cout<<"tempD: "<<temp<<endl;
+        int val = temp/(pow10(length-1));
+        temp = temp - (val*(pow10(length-1)));
+        if(val >= 7 && val <= 9){
+            val = val - 7;
+        }else{
+            val = val + 10;
+            val = val - 7;
+        }
+        cout<<"valD: "<<val<<endl;
+        decryptArr[i] = val;
+        i++;
+        length--;
     }
+    //Swapping encrypted number for further decryption
+    tempArr[0] = decryptArr[2];
+    tempArr[1] = decryptArr[3];
+    tempArr[2] = decryptArr[0];
+    tempArr[3] = decryptArr[1];    
     
     
     return 0;
@@ -79,8 +96,8 @@ int Encrypt::pow10(int pow){
 int Encrypt::arrayToInt(int tempArray[]){
     int temp = 0;
     int i = 0;
-    int length = sizeof(tempArray);//*(&tempArray + 1) - tempArray; 
-    cout<<"length: "<<length<<endl;//sizeof(tempArray)/sizeof(tempArray[0]);
+    int length = sizeof(tempArray);
+    cout<<"length: "<<length<<endl;
     while(length > 0){
         int val = tempArray[i]*pow10(length-1);
         temp = temp + val;
