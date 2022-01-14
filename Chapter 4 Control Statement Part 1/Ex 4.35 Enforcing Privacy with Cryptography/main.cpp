@@ -20,6 +20,10 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     Encrypt encrypt(1113, 0);
+    
+    encrypt.decrypt(8088);
+    encrypt.~Encrypt();
+    
     return 0;
 }
 

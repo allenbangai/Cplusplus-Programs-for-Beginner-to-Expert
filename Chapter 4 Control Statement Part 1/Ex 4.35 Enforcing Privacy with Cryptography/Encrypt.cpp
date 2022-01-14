@@ -49,6 +49,7 @@ int Encrypt::encrypt(int encryptD){
     tempArray[2] = encryptArray[0];
     tempArray[3] = encryptArray[1];
     
+    cout<<"Encrypted integer is: "<<arrayToInt(tempArray)<<endl;
     return arrayToInt(tempArray);
 }
 
@@ -81,7 +82,8 @@ int Encrypt::decrypt(int decryptD){
     tempArr[3] = decryptArr[1];    
     
     
-    return 0;
+    cout<<"Decrypted integer is: "<<arrayToInt(tempArr)<<endl;
+    return arrayToInt(tempArr);
 }
 
 int Encrypt::pow10(int pow){
@@ -97,16 +99,12 @@ int Encrypt::arrayToInt(int tempArray[]){
     int temp = 0;
     int i = 0;
     int length = sizeof(tempArray);
-    cout<<"length: "<<length<<endl;
     while(length > 0){
         int val = tempArray[i]*pow10(length-1);
         temp = temp + val;
-        cout<<"tempArray[i]: "<<tempArray[i]<<endl;
-        cout<<"temp: "<<temp<<endl;
         length--; 
         i++;
     } 
-    cout<<"Encrypted integer is: "<<temp<<endl;
     return temp;
 }
 
