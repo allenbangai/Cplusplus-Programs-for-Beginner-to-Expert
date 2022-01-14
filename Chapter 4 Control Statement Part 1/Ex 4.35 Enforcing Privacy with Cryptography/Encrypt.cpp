@@ -19,15 +19,15 @@ Encrypt::Encrypt(int encryptD) {
     setEncrypt(encryptD);
 }
 
-Encrypt::setEncrypt(int encryptD){
+void Encrypt::setEncrypt(int encryptD){
     this->encryptData = encryptD;
 }
 
-Encrypt::getEncrypt(){
+int Encrypt::getEncrypt(){
     return this->encryptData;
 }
 
-Encrypt::encrypt(int encryptD){
+int Encrypt::encrypt(int encryptD){
     string encryptAdd = "";
     int temp = encryptD;
     int length = to_string(encryptD).length();
@@ -38,7 +38,7 @@ Encrypt::encrypt(int encryptD){
     }
 }
 
-Encrypt::decrypt(int decryptD){
+int Encrypt::decrypt(int decryptD){
     
 }
 Encrypt::Encrypt(const Encrypt& orig) {
