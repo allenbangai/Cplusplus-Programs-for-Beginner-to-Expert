@@ -39,6 +39,10 @@ int Growth_Rate::GetPopulation(){
     return this->rate;
 }
 
+int Growth_Rate::GetPopulation(){
+    return this->population;
+}
+
 Growth_Rate::Growth_Rate(const Growth_Rate& orig) {
 }
 
