@@ -43,6 +43,16 @@ int Growth_Rate::GetPopulation(){
     return this->population;
 }
 
+void Growth_Rate::printPopulation(){
+    
+}
+
+int Growth_Rate::doublePopulation(){
+    
+    return 0;
+}
+
+
 Growth_Rate::Growth_Rate(const Growth_Rate& orig) {
 }
 
