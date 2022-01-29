@@ -15,6 +15,7 @@
 Growth_Rate::Growth_Rate() {
 }
 
+
 Growth_Rate::Growth_Rate(const Growth_Rate& orig) {
 }
 
