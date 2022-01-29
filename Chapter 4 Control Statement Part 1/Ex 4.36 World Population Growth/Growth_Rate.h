@@ -24,6 +24,10 @@ public:
 
     Growth_Rate(float rate, int population, int numYears);
 
+    /**
+     * number of year
+     * @return 
+     */
     int GetNumYears();
 
     void SetNumYears(int numYears);
@@ -38,7 +42,7 @@ public:
     
     void printPopulation();
     
-    int doublePopulation();
+    void doublePopulation();
     
     Growth_Rate(const Growth_Rate& orig);
     virtual ~Growth_Rate();
