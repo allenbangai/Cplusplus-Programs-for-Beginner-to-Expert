@@ -37,7 +37,7 @@ int Growth_Rate::GetNumYears(){
     return this->numYears;
 }
 
-int Growth_Rate::GetPopulation(){
+float Growth_Rate::GetRate(){
     return this->rate;
 }
 

@@ -19,7 +19,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    Growth_Rate growthRate(0.011, 7.9, 75);
+    Growth_Rate growthRate(0.011, 7600, 75);
     
     growthRate.printPopulation();
     cout<<endl;
