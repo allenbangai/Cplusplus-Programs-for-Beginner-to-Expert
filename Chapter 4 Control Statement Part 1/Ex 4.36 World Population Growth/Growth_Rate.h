@@ -16,9 +16,42 @@
 class Growth_Rate {
 public:
     Growth_Rate();
+
+    Growth_Rate(float rate, int population, int numYears) :
+        rate(rate), population(population), numYears(numYears) {
+    }
+
+
+    int GetNumYears() const {
+        return numYears;
+    }
+
+    void SetNumYears(int numYears) {
+        this->numYears = numYears;
+    }
+
+    int GetPopulation() const {
+        return population;
+    }
+
+    void SetPopulation(int population) {
+        this->population = population;
+    }
+
+    float GetRate() const {
+        return rate;
+    }
+
+    void SetRate(float rate) {
+        this->rate = rate;
+    }
+
     Growth_Rate(const Growth_Rate& orig);
     virtual ~Growth_Rate();
 private:
+    float rate;
+    int population;
+    int numYears = 75;
 
 };
 
