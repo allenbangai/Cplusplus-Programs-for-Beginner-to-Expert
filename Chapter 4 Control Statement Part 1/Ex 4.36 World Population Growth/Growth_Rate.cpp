@@ -46,7 +46,20 @@ int Growth_Rate::GetPopulation(){
 }
 
 void Growth_Rate::printPopulation(){
-    
+    int i = 0;
+    int initialYr = GetPopulation();
+    int nextYr, difference = 0;
+    cout<<"In year "<<i+1<<" population was "<<initialYr<<
+        " and increase in population was "<<difference<<endl;
+    while (i<GetNumYears()) {
+        i++;
+        nextYr = initialYr + initialYr*GetRate();
+        difference = nextYr - initialYr;
+        cout<<"In year "<<i+1<<" population was "<<nextYr<<
+        " and increase in population was "<<difference<<endl;
+        initialYr = nextYr;
+    }
+
 }
 
 int Growth_Rate::doublePopulation(){

@@ -13,6 +13,11 @@
 #ifndef GROWTH_RATE_H
 #define GROWTH_RATE_H
 
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
 class Growth_Rate {
 public:
     Growth_Rate();
