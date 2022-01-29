@@ -19,16 +19,24 @@ Growth_Rate::Growth_Rate(float rate, int population, int numYears){
     
 }
 
-Growth_Rate::SetNumYears(int numYears){
+void Growth_Rate::SetNumYears(int numYears){
     this->numYears = numYears;
 }
 
-Growth_Rate::SetPopulation(int population){
+void Growth_Rate::SetPopulation(int population){
     this->population = population;
 }
 
-Growth_Rate::SetRate(float rate){
+void Growth_Rate::SetRate(float rate){
     this->rate = rate;
+}
+
+int Growth_Rate::GetNumYears(){
+    return this->numYears;
+}
+
+int Growth_Rate::GetPopulation(){
+    return this->rate;
 }
 
 Growth_Rate::Growth_Rate(const Growth_Rate& orig) {
