@@ -11,6 +11,7 @@
  */
 
 #include <cstdlib>
+#include "Growth_Rate.h"
 
 using namespace std;
 
@@ -18,7 +19,13 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    Growth_Rate growthRate(0.011, 7.9, 75);
+    
+    growthRate.printPopulation();
+    cout<<endl;
+    growthRate.doublePopulation();
 
+    growthRate.~Growth_Rate();
     return 0;
 }
 
