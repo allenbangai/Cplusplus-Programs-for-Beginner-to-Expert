@@ -63,14 +63,14 @@ void Growth_Rate::printPopulation(){
 
 void Growth_Rate::doublePopulation(){
     int initialPop = GetPopulation();
-    int finalPop = initialPop;
+    int finalPop = GetPopulation();
     int i = 0; //for number of years
     while (finalPop <  2*initialPop){
-        finalPop = finalPop*GetRate();
+        finalPop = finalPop + finalPop*GetRate();
         i++;
     }
     //print
-    cout<<"At the "<<i<<"th year, population will be "
+    cout<<"At the "<<i+1<<"th year, population will be "
     <<finalPop<<" double the initial population "<<initialPop<<endl;
 }
 
