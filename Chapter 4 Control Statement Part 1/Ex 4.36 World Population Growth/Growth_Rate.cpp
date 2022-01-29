@@ -16,7 +16,9 @@ Growth_Rate::Growth_Rate() {
 }
 
 Growth_Rate::Growth_Rate(float rate, int population, int numYears){
-    
+    SetNumYears(numYears);
+    SetPopulation(population);
+    SetRate(rate);
 }
 
 void Growth_Rate::SetNumYears(int numYears){
