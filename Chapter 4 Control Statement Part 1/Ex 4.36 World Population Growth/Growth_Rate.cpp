@@ -59,12 +59,17 @@ void Growth_Rate::printPopulation(){
         " and increase in population was "<<difference<<endl;
         initialYr = nextYr;
     }
-
 }
 
 int Growth_Rate::doublePopulation(){
-    
-    return 0;
+    int initialPop = GetPopulation();
+    int finalPop = initialPop;
+    int i = 0; //for number of years
+    while (finalPop >=  2*initialPop){
+        finalPop = finalPop*GetRate();
+        i++;
+    }
+    return finalPop;
 }
 
 
