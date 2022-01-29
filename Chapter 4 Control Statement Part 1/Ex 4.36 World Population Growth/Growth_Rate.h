@@ -5,7 +5,7 @@
 
 /* 
  * File:   Growth_Rate.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on January 29, 2022, 12:18 PM
  */

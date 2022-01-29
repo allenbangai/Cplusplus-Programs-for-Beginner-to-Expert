@@ -5,7 +5,7 @@
 
 /* 
  * File:   main.cpp
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on December 11, 2021, 6:30 PM
  */
