@@ -16,7 +16,12 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     int choice;
-    cin<<choice;
+    cin>>choice;
+    cout<<endl;
+    cout<<"Enter 1 for chapter 5 example"<<endl;
+    cout<<"Enter 2 for Ex 5.30 of chapter 5"<<endl;
+    cout<<"Enter 3 for Ex 5.31 of chapter 5"<<endl;
+    cout<<"Enter 4 for Ex 5.32 of chapter 5"<<endl;
     switch(choice){
         case 1:
             CompInterest interest(10000.0, 0.05, 9);
