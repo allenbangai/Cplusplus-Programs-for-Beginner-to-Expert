@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>CompoundInterest.h</itemPath>
+      <itemPath>GlobalWarmingQuiz.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -42,6 +43,8 @@
       </compileType>
       <item path="CompoundInterest.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="GlobalWarmingQuiz.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -67,6 +70,8 @@
         </asmTool>
       </compileType>
       <item path="CompoundInterest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GlobalWarmingQuiz.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
