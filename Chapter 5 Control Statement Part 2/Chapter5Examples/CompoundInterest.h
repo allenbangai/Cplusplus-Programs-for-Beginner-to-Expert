@@ -5,7 +5,7 @@
 
 /* 
  * File:   CompoundInterest.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on January 30, 2022, 12:51 AM
  */
