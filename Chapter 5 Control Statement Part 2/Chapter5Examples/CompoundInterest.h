@@ -13,6 +13,22 @@
 #ifndef COMPOUNDINTEREST_H
 #define COMPOUNDINTEREST_H
 
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+class CompInterest{
+public:
+    
+    virtual ~CompInterest(){
+        
+    }    
+private:
+    double PValue;
+    double rate;
+    int numYears;
+};
 
 
 #endif /* COMPOUNDINTEREST_H */
