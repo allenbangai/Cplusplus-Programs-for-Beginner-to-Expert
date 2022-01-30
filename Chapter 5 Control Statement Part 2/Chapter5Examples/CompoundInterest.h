@@ -20,7 +20,39 @@ using namespace std;
 
 class CompInterest{
 public:
+    CompInterest(double PValue, double rate, int numYears){
+        SetPValue(PValue), SetRate(rate), SetNumYears(numYears);
+    }
+        
+    double GetPValue() const {
+        return PValue;
+    }
+
+    void SetPValue(double PValue) {
+        this->PValue = PValue;
+    }
+
+    int GetNumYears() const {
+        return numYears;
+    }
+
+    void SetNumYears(int numYears) {
+        this->numYears = numYears;
+    }
+
+    double GetRate() const {
+        return rate;
+    }
+
+    void SetRate(double rate) {
+        this->rate = rate;
+    }
     
+    void printFinalVal(){
+        cout<<fixed<<setprecision(2)<<endl;
+        double FValue = PValue * pow(1 + GetRate(), GetNumYears())
+    }
+
     virtual ~CompInterest(){
         
     }    
