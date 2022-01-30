@@ -5,6 +5,8 @@
 
 #include "CompoundInterest.h"
 
+using namespace std;
+
 
 /* 
  * File:   main.cpp
@@ -12,10 +14,6 @@
  *
  * Created on January 30, 2022, 12:40 AM
  */
-
-#include "CompoundInterest.h"
-
-using namespace std;
 
 /*
  * 
