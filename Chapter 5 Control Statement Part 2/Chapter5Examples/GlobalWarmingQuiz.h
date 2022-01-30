@@ -13,7 +13,13 @@
 #ifndef GLOBALWARMINGQUIZ_H
 #define GLOBALWARMINGQUIZ_H
 
-
+class Quiz{   
+public:
+    
+private:
+    
+    
+};
 
 #endif /* GLOBALWARMINGQUIZ_H */
 
