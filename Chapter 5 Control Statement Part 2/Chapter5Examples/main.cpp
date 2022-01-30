@@ -21,7 +21,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    CompInterest interest(10000.99, 0.09);
+    CompInterest interest(10000.0, 0.05, 9);
     
     interest.printFinalVal();
     interest.~CompInterest();

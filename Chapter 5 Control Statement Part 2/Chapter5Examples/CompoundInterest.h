@@ -52,7 +52,8 @@ public:
     void printFinalVal(){
         cout<<fixed<<setprecision(3)<<endl;
         double FValue = PValue * pow(1 + GetRate(), GetNumYears());
-        cout<<"After "<<GetNumYears()<<" the final value interest will be "<<FValue<<endl;
+        cout<<"After "<<GetNumYears()<<" years the final value interest for "
+                <<GetPValue()<<" with rate of "<<GetRate()<<" will be "<<FValue<<endl;
     }
 
     virtual ~CompInterest(){
