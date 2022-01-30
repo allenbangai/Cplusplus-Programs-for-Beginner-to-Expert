@@ -14,6 +14,7 @@
 #define COMPOUNDINTEREST_H
 
 #include <iostream>
+#include <cstdlib>
 #include <iomanip>
 #include <cmath>
 using namespace std;
@@ -49,12 +50,12 @@ public:
     }
     
     void printFinalVal(){
-        cout<<fixed<<setprecision(2)<<endl;
-        double FValue = PValue * pow(1 + GetRate(), GetNumYears())
+        cout<<fixed<<setprecision(3)<<endl;
+        double FValue = PValue * pow(1 + GetRate(), GetNumYears());
+        cout<<"After "<<GetNumYears()<<" the final value interest will be "<<FValue<<endl;
     }
 
     virtual ~CompInterest(){
-        
     }    
 private:
     double PValue;

@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/main.cc to edit this template
  */
 
+#include "CompoundInterest.h"
+
+
 /* 
  * File:   main.cpp
  * Author: DELL
@@ -10,7 +13,7 @@
  * Created on January 30, 2022, 12:40 AM
  */
 
-#include <cstdlib>
+#include "CompoundInterest.h"
 
 using namespace std;
 
@@ -18,7 +21,10 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
+    CompInterest interest(10000.99, 0.09);
+    
+    interest.printFinalVal();
+    interest.~CompInterest();
     return 0;
 }
 
