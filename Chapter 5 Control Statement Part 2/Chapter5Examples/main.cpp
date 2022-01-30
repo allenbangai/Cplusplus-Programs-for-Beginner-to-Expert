@@ -10,13 +10,9 @@ using namespace std;
 
 /* 
  * File:   main.cpp
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on January 30, 2022, 12:40 AM
- */
-
-/*
- * 
  */
 int main(int argc, char** argv) {
     CompInterest interest(10000.0, 0.05, 9);
