@@ -5,7 +5,7 @@
 
 /* 
  * File:   GlobalWarmingQuiz.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on January 30, 2022, 10:02 PM
  */
@@ -15,9 +15,20 @@
 
 class Quiz{   
 public:
+    Quiz(){
+        
+    }
+    
+    void questions(){
+        
+    }
+    
+    void printInfor(){
+        
+    }
     
 private:
-    
+    int i = 0;
     
 };
 
