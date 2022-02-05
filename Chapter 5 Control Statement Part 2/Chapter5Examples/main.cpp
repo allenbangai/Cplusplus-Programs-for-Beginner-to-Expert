@@ -37,8 +37,10 @@ int main(int argc, char** argv) {
             quizs.~Quiz();
             break;
         case 3:
+            cout<<"No implementation for this exercise"<<endl;
             break;
         case 4:
+            
             break;
     }
     
