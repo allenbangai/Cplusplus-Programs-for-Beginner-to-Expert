@@ -26,23 +26,34 @@ public:
     
     void questions(){
         char val = 'a';
-        cout<<"Which gas contribute to global warming \nA) Carbon Dioxide B) Oxygen C) Nitrogen "<<endl;
+        cout<<"Which gas contribute to global warming "
+                "\nA) Carbon Dioxide B) Oxygen C) Nitrogen "<<endl;
         cin>>val;
+        userInput[0] = val;
         cout<<"\nWhich of the following process releases more gas for global warming"
-                ""<<endl;
+                "\nA) Hydrolysis B) Combustion C) Biomass"<<endl;
         cin>>val;
+        userInput[1] = val;
         cout<<"\nWhich of the following is a way to prevent for biogas"
-                ""<<endl;        
+                "\nA)Exaction of oxygen from water, B) Forestation C) Deforestation"<<endl;
+        cin>>val;
+        userInput[2] = val;        
     }
     
     void printInfor(){
+        string val;
+        for(int i=0; i<sizeof(answers); i++){
+            if(userInput[i] == answers[i]){
+                
+            }
+        }
         
     }
     
 private:
-    int i = 0;
-    char userInput = {};
-    char answers[] = {'A', 'B', 'A'};    
+    int answersVal = 0;
+    char userInput[] = {};
+    char answers[] = {'A', 'B', 'B'};    
 };
 
 #endif /* GLOBALWARMINGQUIZ_H */
