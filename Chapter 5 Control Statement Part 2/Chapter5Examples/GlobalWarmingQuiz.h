@@ -13,6 +13,11 @@
 #ifndef GLOBALWARMINGQUIZ_H
 #define GLOBALWARMINGQUIZ_H
 
+#include <iomanip>
+#include <iostream>
+
+using namespace std;
+
 class Quiz{   
 public:
     Quiz(){
