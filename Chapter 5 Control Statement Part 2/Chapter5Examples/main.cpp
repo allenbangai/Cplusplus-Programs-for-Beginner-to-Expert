@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
         case 2:
             Quiz quiz();
             quiz().questions();
+            quiz().questions();
             break;
         case 3:
             break;
