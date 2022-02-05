@@ -19,11 +19,11 @@ FaceBookUserGrowth::FaceBookUserGrowth(long FValue){
     SetFValue(FValue);
 }
 
-FaceBookUserGrowth::SetFValue(long FValue){
+void FaceBookUserGrowth::SetFValue(long FValue){
     this->FValue = FValue;
 }
 
-FaceBookUserGrowth::GetNumOfMonths(){
+int FaceBookUserGrowth::GetNumOfMonths(){
     
     return this->numOfMonths;
 }
