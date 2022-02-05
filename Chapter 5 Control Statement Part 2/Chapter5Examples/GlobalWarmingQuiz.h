@@ -20,8 +20,7 @@ using namespace std;
 
 class Quiz{   
 public:
-    Quiz(){
-        
+    Quiz(){        
     }
     
     void questions(){
@@ -49,8 +48,7 @@ public:
                 val = "wrong";
             }
             cout<<"The "<<i+1<<" answer is "<<val<<endl;
-        }
-        
+        }        
     }
     
 private:

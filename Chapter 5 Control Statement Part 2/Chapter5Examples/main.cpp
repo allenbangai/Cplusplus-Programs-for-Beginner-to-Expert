@@ -4,6 +4,7 @@
  */
 
 #include "CompoundInterest.h"
+#include "GlobalWarmingQuiz.h"
 
 using namespace std;
 
@@ -30,6 +31,8 @@ int main(int argc, char** argv) {
             interest.~CompInterest();
             break;
         case 2:
+            Quiz quiz();
+            quiz().questions();
             break;
         case 3:
             break;
