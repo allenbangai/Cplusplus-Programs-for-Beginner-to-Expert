@@ -32,8 +32,7 @@ int main(int argc, char** argv) {
             interest.~CompInterest();
             break;
         case 2:
-            quiz.questions();
-            quiz.questions();
+            Quiz().questions();
             Quiz().printInfor();
             break;
         case 3:
