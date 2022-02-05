@@ -15,6 +15,19 @@
 FaceBookUserGrowth::FaceBookUserGrowth() {
 }
 
+FaceBookUserGrowth::FaceBookUserGrowth(long FValue){
+    SetFValue(FValue);
+}
+
+FaceBookUserGrowth::SetFValue(long FValue){
+    this->FValue = FValue;
+}
+
+FaceBookUserGrowth::GetNumOfMonths(){
+    
+    return this->numOfMonths;
+}
+
 FaceBookUserGrowth::FaceBookUserGrowth(const FaceBookUserGrowth& orig) {
 }
 
