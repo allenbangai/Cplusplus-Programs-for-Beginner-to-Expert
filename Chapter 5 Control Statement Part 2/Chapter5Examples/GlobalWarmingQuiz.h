@@ -26,7 +26,7 @@ public:
     
     void questions(){
         char val = 'a';
-        cout<<"Which Gas contribute to global warming \nA) Carbon Dioxide B) Oxygen C) Nitrogen "<<endl;
+        cout<<"Which gas contribute to global warming \nA) Carbon Dioxide B) Oxygen C) Nitrogen "<<endl;
         cin>>val;
         cout<<"\nWhich of the following process releases more gas for global warming"
                 ""<<endl;
