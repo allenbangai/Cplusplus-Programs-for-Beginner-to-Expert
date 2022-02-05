@@ -24,6 +24,10 @@ public:
     
     virtual ~FaceBookUserGrowth();
 private:
+    const long PValue = 500000000;
+    const double rate = 0.05;
+    int numOfMonths;
+    long FValue;
 
 };
 
