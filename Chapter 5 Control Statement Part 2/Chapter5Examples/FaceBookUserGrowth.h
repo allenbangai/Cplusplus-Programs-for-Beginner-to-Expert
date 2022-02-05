@@ -18,9 +18,11 @@ public:
     FaceBookUserGrowth();
     FaceBookUserGrowth(const FaceBookUserGrowth& orig);
     
+    FaceBookUserGrowth(long FValue);
     
-    
-    
+    void SetFValue(long FValue);
+
+    int GetNumOfMonths();
     
     virtual ~FaceBookUserGrowth();
 private:
