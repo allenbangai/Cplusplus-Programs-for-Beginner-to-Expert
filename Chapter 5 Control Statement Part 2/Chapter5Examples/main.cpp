@@ -16,6 +16,9 @@ using namespace std;
  * Created on January 30, 2022, 12:40 AM
  */
 int main(int argc, char** argv) {
+    CompInterest interest(10000.0, 0.05, 9);
+    Quiz quiz();
+    
     int choice;
     cin>>choice;
     cout<<endl;
@@ -24,16 +27,14 @@ int main(int argc, char** argv) {
     cout<<"Enter 3 for Ex 5.31 of chapter 5"<<endl;
     cout<<"Enter 4 for Ex 5.32 of chapter 5"<<endl;
     switch(choice){
-        case 1:
-            CompInterest interest(10000.0, 0.05, 9);
-
+        case 1:      
             interest.printFinalVal();
             interest.~CompInterest();
             break;
         case 2:
-            Quiz quiz();
-            quiz().questions();
-            quiz().questions();
+            quiz.questions();
+            quiz.questions();
+            Quiz().printInfor();
             break;
         case 3:
             break;

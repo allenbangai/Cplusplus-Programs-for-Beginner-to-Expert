@@ -24,7 +24,7 @@ public:
     }
     
     void questions(){
-        char val = 'a';
+        char val;
         cout<<"Which gas contribute to global warming "
                 "\nA) Carbon Dioxide B) Oxygen C) Nitrogen "<<endl;
         cin>>val;
@@ -53,8 +53,8 @@ public:
     
 private:
     int answersVal = 0;
-    char userInput[] = {};
-    char answers[] = {'A', 'B', 'B'};    
+    char userInput[3];
+    char answers[3] = {'A', 'B', 'B'};    
 };
 
 #endif /* GLOBALWARMINGQUIZ_H */
