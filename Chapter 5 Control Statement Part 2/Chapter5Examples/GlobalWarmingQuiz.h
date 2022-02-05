@@ -44,8 +44,11 @@ public:
         string val;
         for(int i=0; i<sizeof(answers); i++){
             if(userInput[i] == answers[i]){
-                
+                val = "correct";
+            }else{
+                val = "wrong";
             }
+            cout<<"The "<<i+1<<" answer is "<<val<<endl;
         }
         
     }
