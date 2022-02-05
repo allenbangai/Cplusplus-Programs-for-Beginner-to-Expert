@@ -20,7 +20,8 @@ using namespace std;
 
 class Quiz{   
 public:
-    Quiz(){        
+    Quiz(int answersVal) :
+    answersVal(answersVal) {
     }
     
     void questions(){
@@ -52,7 +53,7 @@ public:
     }
     
 private:
-    int answersVal = 0;
+    int answersVal;
     char userInput[3];
     char answers[3] = {'A', 'B', 'B'};    
 };
