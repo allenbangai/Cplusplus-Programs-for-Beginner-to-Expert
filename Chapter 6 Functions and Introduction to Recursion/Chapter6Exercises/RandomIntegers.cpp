@@ -18,7 +18,9 @@ RandomIntegers::RandomIntegers() {
 RandomIntegers::RandomIntegers(const RandomIntegers& orig) {
 }
 
-void RandomIntegers::
+void RandomIntegers::scaleRandomIntegers(){
+    
+}
 
 RandomIntegers::~RandomIntegers() {
 }
