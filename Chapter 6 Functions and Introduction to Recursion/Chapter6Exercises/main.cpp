@@ -9,7 +9,7 @@
  *
  * Created on February 8, 2022, 1:26 AM
  */
-
+#include "RandomIntegers.h"
 #include <cstdlib>
 
 using namespace std;
@@ -18,7 +18,8 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
+    RandomIntegers randInt();
+    randInt.scaleRandomIntegers();
     return 0;
 }
 

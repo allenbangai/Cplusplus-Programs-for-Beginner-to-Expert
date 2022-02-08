@@ -13,6 +13,7 @@
 #include "RandomIntegers.h"
 
 RandomIntegers::RandomIntegers() {
+    scaleRandomIntegers();
 }
 
 RandomIntegers::RandomIntegers(const RandomIntegers& orig) {
