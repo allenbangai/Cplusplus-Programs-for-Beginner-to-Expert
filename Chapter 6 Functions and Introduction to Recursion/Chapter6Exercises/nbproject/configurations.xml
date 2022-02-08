@@ -4,7 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>ScaleRandomIntegers.h</itemPath>
+      <itemPath>RandomIntegers.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -13,7 +13,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>ScaleRandomIntegers.cpp</itemPath>
+      <itemPath>RandomIntegers.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -41,9 +41,9 @@
           <standard>11</standard>
         </ccTool>
       </compileType>
-      <item path="ScaleRandomIntegers.cpp" ex="false" tool="1" flavor2="0">
+      <item path="RandomIntegers.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="ScaleRandomIntegers.h" ex="false" tool="3" flavor2="0">
+      <item path="RandomIntegers.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -69,9 +69,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="ScaleRandomIntegers.cpp" ex="false" tool="1" flavor2="0">
+      <item path="RandomIntegers.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="ScaleRandomIntegers.h" ex="false" tool="3" flavor2="0">
+      <item path="RandomIntegers.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
