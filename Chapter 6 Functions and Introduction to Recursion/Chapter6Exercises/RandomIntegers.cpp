@@ -18,6 +18,8 @@ RandomIntegers::RandomIntegers() {
 RandomIntegers::RandomIntegers(const RandomIntegers& orig) {
 }
 
+void RandomIntegers::
+
 RandomIntegers::~RandomIntegers() {
 }
 
