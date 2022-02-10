@@ -24,9 +24,7 @@ public:
     
     RandomIntegers(int rolls);
     
-    int getRolls() const {
-        return rolls;
-    }
+    int getRolls() const;
 
     void setRolls(int rolls);
     
