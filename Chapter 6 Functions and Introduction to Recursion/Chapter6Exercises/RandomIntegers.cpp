@@ -53,7 +53,26 @@ void RandomIntegers::freqRandomDie(){
         face = 1 + rand()%6;
         
         //determine roll value 1-6 and increment appropriate counter
-        
+        switch(face){
+            case 1:
+                freq1++;
+                break;
+            case 2:
+                freq2++;
+                break;
+            case 3:
+                freq3++;
+                break;
+            case 4:
+                freq4++;
+                break;
+            case 5:
+                freq5++;
+                break;
+            case 6:
+                freq6++;
+                break;
+        }
     }
 }
 
