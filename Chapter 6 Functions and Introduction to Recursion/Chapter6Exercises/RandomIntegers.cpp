@@ -13,7 +13,11 @@
 #include "RandomIntegers.h"
 
 RandomIntegers::RandomIntegers() {
-    scaleRandomIntegers();
+    //scaleRandomIntegers();
+}
+
+RandomIntegers::RandomIntegers(int rolls){
+    this->rolls = rolls;
 }
 
 RandomIntegers::RandomIntegers(const RandomIntegers& orig) {
@@ -32,7 +36,7 @@ void RandomIntegers::scaleRandomIntegers(){
     }//end for
 }//end method
 
-int RandomIntegers::getRolls() const{
+int RandomIntegers::getRolls() {
     return rolls;
 }
 
@@ -49,7 +53,7 @@ void RandomIntegers::freqRandomDie(){
     int freq6 = 0; //count of the 6 roll
     
     int face; //most used recently rolled value
-    for(int roll = 1; roll<=rolls; roll++){
+    for(int roll = 1; roll<=getRolls(); roll++){
         face = 1 + rand()%6;
         
         //determine roll value 1-6 and increment appropriate counter
@@ -73,15 +77,14 @@ void RandomIntegers::freqRandomDie(){
                 freq6++;
                 break;
         }
-        
-        cout << "Face" << setw( 13 ) << "Frequency" << endl; // output headers
-        cout << " 1" << setw( 13 ) << freq1
-        << "\n 2" << setw( 13 ) << freq2
-        << "\n 3" << setw( 13 ) << freq3
-        << "\n 4" << setw( 13 ) << freq4
-        << "\n 5" << setw( 13 ) << freq5
-        << "\n 6" << setw( 13 ) << freq6 << endl;
     }
+    cout << "Face" << setw( 13 ) << "Frequency" << endl; // output headers
+    cout << " 1" << setw( 13 ) << freq1
+    << "\n 2" << setw( 13 ) << freq2
+    << "\n 3" << setw( 13 ) << freq3
+    << "\n 4" << setw( 13 ) << freq4
+    << "\n 5" << setw( 13 ) << freq5
+    << "\n 6" << setw( 13 ) << freq6 << endl;
 }
 
 RandomIntegers::~RandomIntegers() {

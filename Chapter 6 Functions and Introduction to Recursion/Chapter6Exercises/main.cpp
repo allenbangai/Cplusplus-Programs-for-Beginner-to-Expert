@@ -20,7 +20,8 @@ using namespace std;
 int main(int argc, char** argv) {
     RandomIntegers().scaleRandomIntegers();
     
-    RandomIntegers().freqRandomDie();
+    RandomIntegers random(100);
+    random.freqRandomDie();
     return 0;
 }
 

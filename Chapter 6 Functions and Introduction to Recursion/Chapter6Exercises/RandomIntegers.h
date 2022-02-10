@@ -24,16 +24,15 @@ public:
     
     RandomIntegers(int rolls);
     
-    int getRolls() const;
+    int getRolls();
 
     void setRolls(int rolls);
-    
-    RandomIntegers(const RandomIntegers& orig);
     
     void scaleRandomIntegers();
     
     void freqRandomDie();
     
+    RandomIntegers(const RandomIntegers& orig);
     virtual ~RandomIntegers();
 private:
     int rolls;
