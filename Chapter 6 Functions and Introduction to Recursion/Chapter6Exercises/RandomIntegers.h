@@ -22,13 +22,25 @@ class RandomIntegers {
 public:
     RandomIntegers();
     
+    RandomIntegers(int rolls);
+    
+    int getRolls() const {
+        return rolls;
+    }
+
+    void setRolls(int rolls) {
+        this->rolls = rolls;
+    }
+    
     RandomIntegers(const RandomIntegers& orig);
     
     void scaleRandomIntegers();
     
+    void freqRandomDie();
+    
     virtual ~RandomIntegers();
 private:
-
+    int rolls;
 };
 
 #endif /* RANDOMINTEGERS_H */
