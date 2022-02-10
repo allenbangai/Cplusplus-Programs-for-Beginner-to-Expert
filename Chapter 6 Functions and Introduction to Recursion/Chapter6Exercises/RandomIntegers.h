@@ -28,9 +28,7 @@ public:
         return rolls;
     }
 
-    void setRolls(int rolls) {
-        this->rolls = rolls;
-    }
+    void setRolls(int rolls);
     
     RandomIntegers(const RandomIntegers& orig);
     

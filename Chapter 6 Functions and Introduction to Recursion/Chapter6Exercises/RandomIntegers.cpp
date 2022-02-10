@@ -32,6 +32,18 @@ void RandomIntegers::scaleRandomIntegers(){
     }//end for
 }//end method
 
+int RandomIntegers::getRolls() const{
+    return rolls;
+}
+
+void RandomIntegers::setRolls(int rolls){
+    this->rolls = rolls;
+}
+   
+void RandomIntegers::freqRandomDie(){
+    
+}
+
 RandomIntegers::~RandomIntegers() {
 }
 
