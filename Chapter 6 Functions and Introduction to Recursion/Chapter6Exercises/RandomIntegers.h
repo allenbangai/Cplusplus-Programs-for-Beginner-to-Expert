@@ -10,7 +10,7 @@ using namespace std;
 
 /* 
  * File:   RandomIntegers.h
- * Author: DELL
+ * Author: Kamadje
  *
  * Created on February 8, 2022, 11:58 PM
  */

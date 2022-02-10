@@ -5,7 +5,7 @@
 
 /* 
  * File:   RandomIntegers.cpp
- * Author: DELL
+ * Author: Kamadje Allen
  * 
  * Created on February 8, 2022, 11:58 PM
  */
