@@ -21,7 +21,7 @@ RandomIntegers::RandomIntegers(const RandomIntegers& orig) {
 
 void RandomIntegers::scaleRandomIntegers(){
     //loop 20 times
-    for(int i=0; i<20; i++){
+    for(int i=1; i<=20; i++){
         //pick random number from one to six
         cout<<setw(10)<<(1+rand()%6);
        

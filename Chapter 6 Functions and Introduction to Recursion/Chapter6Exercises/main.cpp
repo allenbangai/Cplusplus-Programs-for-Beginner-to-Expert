@@ -18,8 +18,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    RandomIntegers randInt();
-    randInt.scaleRandomIntegers();
+    RandomIntegers().scaleRandomIntegers();
     return 0;
 }
 
