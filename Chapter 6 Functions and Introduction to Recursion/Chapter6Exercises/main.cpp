@@ -19,6 +19,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     RandomIntegers().scaleRandomIntegers();
+    
+    RandomIntegers().freqRandomDie();
     return 0;
 }
 

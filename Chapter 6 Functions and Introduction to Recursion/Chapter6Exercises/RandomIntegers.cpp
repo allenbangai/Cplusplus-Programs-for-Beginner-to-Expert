@@ -73,6 +73,14 @@ void RandomIntegers::freqRandomDie(){
                 freq6++;
                 break;
         }
+        
+        cout << "Face" << setw( 13 ) << "Frequency" << endl; // output headers
+        cout << " 1" << setw( 13 ) << freq1
+        << "\n 2" << setw( 13 ) << freq2
+        << "\n 3" << setw( 13 ) << freq3
+        << "\n 4" << setw( 13 ) << freq4
+        << "\n 5" << setw( 13 ) << freq5
+        << "\n 6" << setw( 13 ) << freq6 << endl;
     }
 }
 
