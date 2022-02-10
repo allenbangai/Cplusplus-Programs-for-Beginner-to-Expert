@@ -41,7 +41,20 @@ void RandomIntegers::setRolls(int rolls){
 }
    
 void RandomIntegers::freqRandomDie(){
+    int freq1 = 0;//count of the first roll
+    int freq2 = 0;
+    int freq3 = 0;
+    int freq4 = 0;
+    int freq5 = 0;
+    int freq6 = 0; //count of the 6 roll
     
+    int face; //most used recently rolled value
+    for(int roll = 1; roll<=rolls; roll++){
+        face = 1 + rand()%6;
+        
+        //determine roll value 1-6 and increment appropriate counter
+        
+    }
 }
 
 RandomIntegers::~RandomIntegers() {
