@@ -32,6 +32,8 @@ public:
     
     void freqRandomDie();
     
+    void sRand();
+    
     RandomIntegers(const RandomIntegers& orig);
     virtual ~RandomIntegers();
 private:
