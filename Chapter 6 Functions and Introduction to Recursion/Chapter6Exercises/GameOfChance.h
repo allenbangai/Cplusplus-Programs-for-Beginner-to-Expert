@@ -27,7 +27,7 @@ public:
     virtual ~GameOfChance();
 private:
 /**
- * https://www.youtube.com/watch?v=sqkdl53mpKg
+ * 
  * https://youtu.be/ghOSOCZ3TWc
  * https://www.youtube.com/watch?v=CWCMGIG1Y54
  * https://www.youtube.com/watch?v=NX_Z-OKCHHU

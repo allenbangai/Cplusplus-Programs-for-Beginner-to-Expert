@@ -15,6 +15,12 @@
 GameOfChance::GameOfChance() {
 }
 
+int GameOfChance::rollDiece(){
+    //pick random die values
+    int die1 = 1 + rand()%6;
+    int die2 = 1 + rand()%6;
+}
+
 GameOfChance::GameOfChance(const GameOfChance& orig) {
 }
 
