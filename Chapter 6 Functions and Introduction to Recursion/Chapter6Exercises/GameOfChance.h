@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/class.h to edit this template
  */
 
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
 /* 
  * File:   GameOfChance.h
  * Author: Kamadje Allen
@@ -23,7 +26,14 @@ public:
     
     virtual ~GameOfChance();
 private:
-
+/**
+ * https://www.youtube.com/watch?v=sqkdl53mpKg
+ * https://youtu.be/ghOSOCZ3TWc
+ * https://www.youtube.com/watch?v=CWCMGIG1Y54
+ * https://www.youtube.com/watch?v=NX_Z-OKCHHU
+ * https://www.youtube.com/watch?v=NX_Z-OKCHHU
+ * https://www.youtube.com/watch?v=CaLyz6tRXIM 
+ */
 };
 
 #endif /* GAMEOFCHANCE_H */
