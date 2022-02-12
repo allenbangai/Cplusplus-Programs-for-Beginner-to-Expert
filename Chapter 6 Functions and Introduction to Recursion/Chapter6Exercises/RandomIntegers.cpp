@@ -98,7 +98,7 @@ void RandomIntegers::sRand(){
         //pick random number from 1 to 6 and output it
         cout<<setw(10) << (1 + rand()%6);
         
-        if(counter%5 = 0){
+        if(counter%5 == 0){
             cout<<endl;
         }
     }

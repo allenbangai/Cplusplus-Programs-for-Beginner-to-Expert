@@ -5,7 +5,7 @@
 
 /* 
  * File:   GameOfChance.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on February 12, 2022, 9:03 PM
  */
