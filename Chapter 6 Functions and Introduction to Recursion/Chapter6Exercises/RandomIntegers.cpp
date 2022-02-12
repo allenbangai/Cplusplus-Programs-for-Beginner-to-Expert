@@ -98,4 +98,12 @@ void RandomIntegers::sRand(){
         //pick random number from 1 to 6 and output it
         cout<<setw(10) << (1 + rand()%6);
         
-        if(co
+        if(counter%5 = 0){
+            cout<<endl;
+        }
+    }
+}
+
+RandomIntegers::~RandomIntegers() {
+}
+
