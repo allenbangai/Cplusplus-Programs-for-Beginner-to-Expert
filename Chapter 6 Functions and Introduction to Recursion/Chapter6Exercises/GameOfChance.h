@@ -6,6 +6,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <ctime> //co
 /* 
  * File:   GameOfChance.h
  * Author: Kamadje Allen
@@ -24,16 +25,11 @@ public:
     
     int rollDiece(); //roll dice, calculate and displace sum
     
+    void playStart();//craps simulation
+    
     virtual ~GameOfChance();
 private:
-/**
- * 
- * 
- * https://www.youtube.com/watch?v=CWCMGIG1Y54
- * https://www.youtube.com/watch?v=NX_Z-OKCHHU
- * https://www.youtube.com/watch?v=NX_Z-OKCHHU
- * https://www.youtube.com/watch?v=CaLyz6tRXIM 
- */
+    
 };
 
 #endif /* GAMEOFCHANCE_H */
