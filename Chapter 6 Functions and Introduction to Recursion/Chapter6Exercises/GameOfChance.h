@@ -16,7 +16,11 @@
 class GameOfChance {
 public:
     GameOfChance();
+    
     GameOfChance(const GameOfChance& orig);
+    
+    int rollDiece(); //roll dice, calculate and displace sum
+    
     virtual ~GameOfChance();
 private:
 
