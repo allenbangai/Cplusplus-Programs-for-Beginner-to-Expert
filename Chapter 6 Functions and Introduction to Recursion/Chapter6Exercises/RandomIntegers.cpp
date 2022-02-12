@@ -87,6 +87,15 @@ void RandomIntegers::freqRandomDie(){
     << "\n 6" << setw( 13 ) << freq6 << endl;
 }
 
-RandomIntegers::~RandomIntegers() {
-}
-
+void RandomIntegers::sRand(){
+    unsigned seed;
+    cout<<"Enter seed: ";
+    cin>>seed;
+    srand(seed); //seed random number generator
+    
+    //for loop
+    for(int counter =1; counter <= 10; counter++){
+        //pick random number from 1 to 6 and output it
+        cout<<setw(10) << (1 + rand()%6);
+        
+        if(co
