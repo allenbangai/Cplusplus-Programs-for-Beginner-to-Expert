@@ -12,7 +12,7 @@
  *
  * Created on February 12, 2022, 9:03 PM
  */
-
+using namespace std;
 #ifndef GAMEOFCHANCE_H
 #define GAMEOFCHANCE_H
 
@@ -28,7 +28,7 @@ public:
 private:
 /**
  * 
- * https://youtu.be/ghOSOCZ3TWc
+ * 
  * https://www.youtube.com/watch?v=CWCMGIG1Y54
  * https://www.youtube.com/watch?v=NX_Z-OKCHHU
  * https://www.youtube.com/watch?v=NX_Z-OKCHHU

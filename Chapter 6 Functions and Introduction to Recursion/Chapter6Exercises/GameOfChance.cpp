@@ -19,7 +19,14 @@ int GameOfChance::rollDiece(){
     //pick random die values
     int die1 = 1 + rand()%6;
     int die2 = 1 + rand()%6;
-}
+    
+    int sum  = die1 + die2;
+    
+    //display result in this roll
+    cout<<"Player rolled "<<die1<<" + "<<die2<<" = "<<sum<<endl;
+    
+    return sum;
+}//end of method roll dice
 
 GameOfChance::GameOfChance(const GameOfChance& orig) {
 }
