@@ -28,6 +28,13 @@ int GameOfChance::rollDiece(){
     return sum;
 }//end of method roll dice
 
+/**
+ * Code implementation for game of chance... The game start as follows
+ */
+void GameOfChance::playStart(){
+    
+}
+
 GameOfChance::GameOfChance(const GameOfChance& orig) {
 }
 

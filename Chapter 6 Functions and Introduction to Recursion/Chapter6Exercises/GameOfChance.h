@@ -6,7 +6,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
-#include <ctime> //co
+#include <ctime> //contains prototype for function time
 /* 
  * File:   GameOfChance.h
  * Author: Kamadje Allen
