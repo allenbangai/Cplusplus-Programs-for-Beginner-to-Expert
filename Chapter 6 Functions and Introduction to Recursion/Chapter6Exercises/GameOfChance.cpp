@@ -65,10 +65,26 @@ void GameOfChance::playStart(){
             break;
         default:
             gameStatus = CONTINUE;
-            break;
+            myPoint = sumOfDice;
+            cout<<"My Points are: "<<myPoint<<endl;
+            break;//optional at end of switch
     }
     
-    
+    //while game is not complete
+    while ( gameStatus == CONTINUE) {
+        sumOfDice = rollDiece();
+        //determine game status
+        if ( sumOfDice == myPoint) {
+            gameStatus == WON;
+        } else {
+            if ( sumOfDice == 7) {
+                gameStatus = LOST;
+            }
+        }
+
+
+    }
+
 }
 
 GameOfChance::GameOfChance(const GameOfChance& orig) {
