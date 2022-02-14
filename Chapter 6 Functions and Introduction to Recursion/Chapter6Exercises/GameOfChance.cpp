@@ -81,10 +81,14 @@ void GameOfChance::playStart(){
                 gameStatus = LOST;
             }
         }
-
-
     }
-
+    
+    //display won or lost message
+    if(gameStatus == WON){
+        cout<<"Player Wins"<<endl;
+    }else if(gameStatus == LOST){
+        cout<<"Player Loses"<<endl;        
+    }
 }
 
 GameOfChance::GameOfChance(const GameOfChance& orig) {
