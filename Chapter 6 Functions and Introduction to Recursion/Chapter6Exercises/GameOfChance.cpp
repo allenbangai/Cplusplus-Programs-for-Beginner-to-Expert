@@ -40,6 +40,7 @@ int GameOfChance::rollDiece(){
  * by rolling a 7 before making the point.
  */
 void GameOfChance::playStart(){
+    cout<<"Game start"<<endl;
     //ENUMERATION with constant that determines the game status
     enum Status{CONTINUE, WON, LOST};
     
