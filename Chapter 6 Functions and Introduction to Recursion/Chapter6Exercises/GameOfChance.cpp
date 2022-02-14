@@ -89,7 +89,7 @@ void GameOfChance::playStart(){
     }else if(gameStatus == LOST){
         cout<<"Player Loses"<<endl;        
     }
-}
+}//end playStart
 
 GameOfChance::GameOfChance(const GameOfChance& orig) {
 }

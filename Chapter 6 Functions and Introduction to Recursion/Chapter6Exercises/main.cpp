@@ -10,6 +10,7 @@
  * Created on February 8, 2022, 1:26 AM
  */
 #include "RandomIntegers.h"
+#include "GameOfChance.h"
 #include <cstdlib>
 
 using namespace std;
@@ -18,10 +19,25 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    RandomIntegers().scaleRandomIntegers();
+    int choice;
+    cout<<"Enter of choice of program u wish to run"<<endl;
+    cin>>choice;
     
-    RandomIntegers random(100);
-    random.freqRandomDie();
+    
+    switch(choice){
+        case 1:
+            RandomIntegers().scaleRandomIntegers();
+            break;
+        case 2:
+            RandomIntegers(100).freqRandomDie();
+            break;
+        case 3:
+            RandomIntegers().sRand();
+            break;
+        case 4:
+            GameOfChance().playStart();
+            break;            
+    }
     return 0;
 }
 
