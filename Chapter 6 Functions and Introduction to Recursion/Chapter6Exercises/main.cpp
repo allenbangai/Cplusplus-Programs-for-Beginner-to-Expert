@@ -36,7 +36,10 @@ int main(int argc, char** argv) {
             break;
         case 4:
             GameOfChance().playStart();
-            break;            
+            break;
+        case 4:
+            
+            break;
     }
     return 0;
 }
