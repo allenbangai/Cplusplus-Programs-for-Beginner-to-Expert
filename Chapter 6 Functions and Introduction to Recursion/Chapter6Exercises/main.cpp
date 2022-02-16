@@ -15,6 +15,10 @@
 
 using namespace std;
 
+inline double cube(const double side){
+    return side*side*side;
+}
+
 /*
  * 
  */
@@ -38,7 +42,7 @@ int main(int argc, char** argv) {
             GameOfChance().playStart();
             break;
         case 4:
-            
+            cout<<"The cube of the float value is "<<cube<<" is: "<<
             break;
     }
     return 0;
