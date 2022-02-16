@@ -41,12 +41,12 @@ int main(int argc, char** argv) {
         case 4:
             GameOfChance().playStart();
             break;
-        case 4:
+        case 5:
             float side;
             cout<<"Enter the side for which u wish to find it cube"<<endl;
             cin>>side;
             cout<<endl;
-            cout<<"The cube of the float value is "<<side<<" is: "<< cube(side);
+            cout<<"The cube of the entered value is "<<side<<" is: "<< cube(side);
             break;
     }
     return 0;
