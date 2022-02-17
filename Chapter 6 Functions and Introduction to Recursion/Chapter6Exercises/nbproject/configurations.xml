@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Examples.h</itemPath>
       <itemPath>GameOfChance.h</itemPath>
       <itemPath>RandomIntegers.h</itemPath>
     </logicalFolder>
@@ -16,6 +17,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Examples.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -43,6 +45,10 @@
           <standard>11</standard>
         </ccTool>
       </compileType>
+      <item path="Examples.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Examples.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="GameOfChance.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GameOfChance.h" ex="false" tool="3" flavor2="0">
@@ -75,6 +81,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Examples.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Examples.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="GameOfChance.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GameOfChance.h" ex="false" tool="3" flavor2="0">
