@@ -15,6 +15,9 @@
 Examples::Examples() {
 }
 
+//function prototype that specifies default arguement
+int boxVolume(int lenght = 1, int width = 1, int height = 1);
+
 Examples::Examples(const Examples& orig) {
 }
 
