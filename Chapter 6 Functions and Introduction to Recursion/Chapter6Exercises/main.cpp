@@ -11,6 +11,7 @@
  */
 #include "RandomIntegers.h"
 #include "GameOfChance.h"
+#include "Examples.h"
 #include <cstdlib>
 
 using namespace std;
@@ -48,6 +49,15 @@ int main(int argc, char** argv) {
             cout<<endl;
             cout<<"The cube of the entered value is "<<side<<" is: "<< cube(side);
             break;
+        case 6:
+            int volume = Examples().boxVolume();
+            cout<<"Default volume of the box is: "<<volume<<endl;
+            volume = Examples().boxVolume(2);
+            cout<<"The volume of the box with length 2 is: "<<volume<<endl;
+            volume = Examples().boxVolume(2, 2);
+            cout<<"The volume of the box with length 2 and width 2 is: "<<volume<<endl;
+            volume = Examples().boxVolume(20, 2, 2);
+            cout<<"The volume of the box with length 20, width 2 and height 2 is: "<<volume<<endl;            
     }
     return 0;
 }
