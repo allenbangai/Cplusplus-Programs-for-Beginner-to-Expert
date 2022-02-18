@@ -23,6 +23,7 @@ public:
      * @param width
      * @param height
      * @return 
+     * length*width*height
      */
     int boxVolume(int length = 1, int width = 1, int height = 1);
     
