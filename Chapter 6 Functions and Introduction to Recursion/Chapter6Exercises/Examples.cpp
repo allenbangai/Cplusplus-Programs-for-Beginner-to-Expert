@@ -15,8 +15,8 @@
 Examples::Examples() {
 }
 
-int Examples::boxVolume(int lenght, int width, int height){
-    return height * width * lenght;
+int Examples::boxVolume(int length, int width, int height){
+    return height * width * length;
 }
 
 Examples::Examples(const Examples& orig) {

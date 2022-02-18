@@ -17,8 +17,14 @@ class Examples {
 public:
     Examples();
     
-    //function prototype that specifies default arguement
-    int boxVolume(int lenght = 1, int width = 1, int height = 1);
+    /**
+     * Method prototype that specifies default argument for finding volume of a box
+     * @param length
+     * @param width
+     * @param height
+     * @return 
+     */
+    int boxVolume(int length = 1, int width = 1, int height = 1);
     
     Examples(const Examples& orig);
     virtual ~Examples();
