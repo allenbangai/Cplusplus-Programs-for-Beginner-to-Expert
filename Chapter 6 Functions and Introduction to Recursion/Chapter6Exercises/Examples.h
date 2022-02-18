@@ -27,6 +27,10 @@ public:
      */
     int boxVolume(int length = 1, int width = 1, int height = 1);
     
+    int square(int val);
+    
+    double square(double val);
+    
     Examples(const Examples& orig);
     virtual ~Examples();
 private:
