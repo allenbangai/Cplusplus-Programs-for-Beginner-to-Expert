@@ -16,6 +16,13 @@
 
 using namespace std;
 
+/**
+ * Creating an Inline method allows you to define and declare the method before the main
+ * @param side
+ * It takes as parameter one side of a cube
+ * @return 
+ * It returns the product of the one side to have the volume of the cube
+ */
 inline double cube(const double side){
     return side*side*side;
 }
