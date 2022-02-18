@@ -27,8 +27,22 @@ public:
      */
     int boxVolume(int length = 1, int width = 1, int height = 1);
     
+    /**
+     * Square method that takes a integer as input parameter 
+     * and return the square of that integer as output parameter
+     * @param val
+     * @return 
+     * val*val
+     */
     int square(int val);
     
+    /**
+     * Square method that takes a double (decimal number) as input parameter 
+     * and return the square of that douable as output parameter
+     * @param val
+     * @return 
+     * val*val
+     */
     double square(double val);
     
     Examples(const Examples& orig);
