@@ -19,6 +19,14 @@ int Examples::boxVolume(int length, int width, int height){
     return height * width * length;
 }
 
+int Examples::square(int val){
+    return val*val;
+}
+
+double Examples::square(double val){
+    return val*val;
+}
+
 Examples::Examples(const Examples& orig) {
 }
 

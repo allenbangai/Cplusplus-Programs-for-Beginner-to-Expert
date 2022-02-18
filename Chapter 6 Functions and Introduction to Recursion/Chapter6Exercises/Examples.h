@@ -38,7 +38,7 @@ public:
     
     /**
      * Square method that takes a double (decimal number) as input parameter 
-     * and return the square of that douable as output parameter
+     * and return the square of that double as output parameter
      * @param val
      * @return 
      * val*val
