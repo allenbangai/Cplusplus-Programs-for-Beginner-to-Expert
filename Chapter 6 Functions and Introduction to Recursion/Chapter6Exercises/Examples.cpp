@@ -27,6 +27,9 @@ double Examples::square(double val){
     return val*val;
 }
 
+template < typename T >
+T product(T x1, T x2, T x3);
+
 Examples::Examples(const Examples& orig) {
 }
 
