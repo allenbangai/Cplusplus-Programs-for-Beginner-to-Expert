@@ -44,6 +44,18 @@ public:
      * val*val
      */
     double square(double val);
+
+    /**
+     * Template function product to implement the product of 3 number being passed as argument
+     * @param x1
+     * @param x2
+     * @param x3
+     * @return 
+     * It returns the product of the three imported parameters that is 
+     * x1*x2*x3
+     */
+    template < typename T >
+    T product(T x1, T x2, T x3);
     
     Examples(const Examples& orig);
     virtual ~Examples();
