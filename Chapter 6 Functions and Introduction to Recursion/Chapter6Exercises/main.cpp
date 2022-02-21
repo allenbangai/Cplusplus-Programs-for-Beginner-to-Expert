@@ -88,7 +88,11 @@ int main(int argc, char** argv) {
             cout<<"Enter value of factorial you wish to find: ";
             cin>>val;
             cout<<endl;
-            cout<<"The factorial of "<<val<<" is: "<<Examples().factorial(val);
+            cout<<"The factorial of "<<val<<" is: "<<Examples().factorial(val)<<endl;
+            cout<<"Enter value of factorial you wish to find for a second time: ";
+            cin>>val;
+            cout<<endl;
+            cout<<"The factorial of "<<val<<" is: "<<Examples().factorialR(val);
             break;
         case 10:
             /**
