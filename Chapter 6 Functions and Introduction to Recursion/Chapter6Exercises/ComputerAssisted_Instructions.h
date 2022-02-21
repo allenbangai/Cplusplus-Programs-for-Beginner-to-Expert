@@ -5,7 +5,7 @@
 
 /* 
  * File:   ComputerAssisted_Instructions.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on February 21, 2022, 8:21 PM
  */
