@@ -5,7 +5,7 @@
 
 /* 
  * File:   Examples.cpp
- * Author: DELL
+ * Author: Kamadje Allen
  * 
  * Created on February 17, 2022, 8:25 PM
  */

@@ -7,7 +7,7 @@
 #include <iomanip>
 /* 
  * File:   Examples.h
- * Author: DELL
+ * Author: Kamadje Allen
  *
  * Created on February 17, 2022, 8:24 PM
  */
