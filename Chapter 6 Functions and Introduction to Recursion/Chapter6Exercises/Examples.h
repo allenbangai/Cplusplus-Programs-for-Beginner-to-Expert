@@ -61,6 +61,14 @@ public:
         return x1*x2*x3;
     }
     
+    /**
+     * Recursive definition of function factorialR
+     * The function factorial takes a number and 
+     * @param num
+     * @return 
+     */
+    unsigned long factorialR( unsigned long num);
+    
     Examples(const Examples& orig);
     virtual ~Examples();
 private:
