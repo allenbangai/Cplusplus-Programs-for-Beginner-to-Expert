@@ -119,9 +119,12 @@ int main(int argc, char** argv) {
                 cout<<"The fibonacci("<<i<<") is: "<<Examples().fibonacci(i)<<endl;
             }
             //display specific fibonacci values
-            cout<<"The fibonacci("<<20<<") is: "<<Examples().fibonacci(50)<<endl;
-            cout<<"The fibonacci("<<30<<") is: "<<Examples().fibonacci(100)<<endl;
-            cout<<"The fibonacci("<<31<<") is: "<<Examples().fibonacci(101)<<endl;
+            cout<<"The fibonacci("<<20<<") is: "<<Examples().fibonacci(20)<<endl;
+            cout<<"The fibonacci("<<30<<") is: "<<Examples().fibonacci(30)<<endl;
+            cout<<"The fibonacci("<<31<<") is: "<<Examples().fibonacci(31)<<endl;
+            break;
+        case 12:
+            cout<<"The fibonacci("<<20<<") is: "<<Examples().fibonacci1(30)<<endl;
             break;
         default:
             cout<<"Wrong choice"<<endl;
