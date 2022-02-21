@@ -87,6 +87,8 @@ public:
      */
     unsigned long fibonacci( unsigned long num);
     
+    unsigned long fibonacci1( unsigned long num);
+    
     Examples(const Examples& orig);
     virtual ~Examples();
 private:

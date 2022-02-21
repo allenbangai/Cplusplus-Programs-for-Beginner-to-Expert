@@ -115,12 +115,13 @@ int main(int argc, char** argv) {
                     "Where the second value should be larger than the first one: ";
             cin>>val;    cout<<endl;
             cin>>val1;    cout<<endl;
-            for(int i = val; i <= val; i++){
+            for(int i = val; i <= val1; i++){
                 cout<<"The fibonacci("<<i<<") is: "<<Examples().fibonacci(i)<<endl;
             }
-            cout<<"The fibonacci("<<50<<") is: "<<Examples().fibonacci(50)<<endl;
-            cout<<"The fibonacci("<<100<<") is: "<<Examples().fibonacci(100)<<endl;
-            cout<<"The fibonacci("<<101<<") is: "<<Examples().fibonacci(101)<<endl;
+            //display specific fibonacci values
+            cout<<"The fibonacci("<<20<<") is: "<<Examples().fibonacci(50)<<endl;
+            cout<<"The fibonacci("<<30<<") is: "<<Examples().fibonacci(100)<<endl;
+            cout<<"The fibonacci("<<31<<") is: "<<Examples().fibonacci(101)<<endl;
             break;
         default:
             cout<<"Wrong choice"<<endl;
