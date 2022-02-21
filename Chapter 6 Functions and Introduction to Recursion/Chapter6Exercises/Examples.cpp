@@ -44,6 +44,7 @@ unsigned long Examples::factorialR(unsigned long num){
     }
 }//end factorialR
 
+unsi
 Examples::Examples(const Examples& orig) {
 }
 
