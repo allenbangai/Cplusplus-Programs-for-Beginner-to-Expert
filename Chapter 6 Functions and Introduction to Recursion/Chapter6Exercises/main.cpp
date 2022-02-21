@@ -124,7 +124,9 @@ int main(int argc, char** argv) {
             cout<<"The fibonacci("<<31<<") is: "<<Examples().fibonacci(31)<<endl;
             break;
         case 12:
-            cout<<"The fibonacci("<<20<<") is: "<<Examples().fibonacci1(30)<<endl;
+            cout<<"Enter the number through which you want to find it's fibonacci: ";
+            cin>>val;
+            cout<<endl<<"The fibonacci("<<val<<") is: "<<Examples().fibonacci1(val)<<endl;
             break;
         default:
             cout<<"Wrong choice"<<endl;
