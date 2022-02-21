@@ -52,6 +52,10 @@ unsigned long Examples::fibonacci(unsigned long num){
     }
 }//end fibonacci
 
+unsigned long Examples::fibonacci1(unsigned long num){
+    
+}
+
 Examples::Examples(const Examples& orig) {
 }
 
