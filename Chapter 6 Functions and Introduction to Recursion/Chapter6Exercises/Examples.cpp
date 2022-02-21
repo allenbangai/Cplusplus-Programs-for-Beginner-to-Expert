@@ -44,7 +44,14 @@ unsigned long Examples::factorialR(unsigned long num){
     }
 }//end factorialR
 
-unsi
+unsigned long Examples::fibonacci(unsigned long num){
+    if(num == 0 || num == 1){
+        return num;
+    }else{
+        return fibonacci(num-1) + fibonacci(num-2);
+    }
+}//end fibonacci
+
 Examples::Examples(const Examples& orig) {
 }
 

@@ -103,11 +103,20 @@ int main(int argc, char** argv) {
              * @return 
              */
             cout<<"Enter range of values you wish to find their factorial \n"
-                    "Where the first value should be larger than the second one: ";
+                    "Where the second value should be larger than the first one: ";
             cin>>val;    cout<<endl;
             cin>>val1;    cout<<endl;
             for(int i = val; i <= val1; i++){
                 cout<<setw(3)<<i<<"! = "<<Examples().factorialR(i)<<endl;
+            }
+            break;
+        case 11:
+            cout<<"Enter range of values you wish to find their fibonacci \n"
+                    "Where the second value should be larger than the first one: ";
+            cin>>val;    cout<<endl;
+            cin>>val1;    cout<<endl;
+            for(int i = val; i <= val; i++){
+                cout<<"The fibonacci("<<i<<") is: "<<Examples().fibonacci(i)<<endl;
             }
             break;
         default:
