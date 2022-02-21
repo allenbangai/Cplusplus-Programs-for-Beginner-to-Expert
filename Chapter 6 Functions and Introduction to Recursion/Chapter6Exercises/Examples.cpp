@@ -27,10 +27,15 @@ double Examples::square(double val){
     return val*val;
 }
 
-//template <typename T>
-//T Examples::product(T x1, T x2, T x3){
-//    return x1*x2*x3;
-//}
+unsigned long Examples::factorial(unsigned long num){
+    int val = 1;
+    for (int i = 0; i < num; i++)
+    {
+        val = val*(num-i);
+    }
+    return val;
+    
+}
 
 Examples::Examples(const Examples& orig) {
 }
