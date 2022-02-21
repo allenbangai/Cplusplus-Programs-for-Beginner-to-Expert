@@ -88,18 +88,23 @@ int main(int argc, char** argv) {
             cout<<"Enter value of factorial you wish to find: ";
             cin>>val;
             cout<<endl;
-            cout<<"The factorial of "<<val<<" is: "<<Examples().factorial(10);
+            cout<<"The factorial of "<<val<<" is: "<<Examples().factorial(val);
             break;
         case 10:
             /**
              * Implementing method fatorialR() from Examples.h
+             * Not that, val > val1
              * @param argc
              * @param argv
              * @return 
              */
-            cout<<"Enter range of values you wish to find their factorial: ";
+            cout<<"Enter range of values you wish to find their factorial /n "
+                    "Where the first value should be larger than the second one: ";
             cin>>val;    cout<<endl;
             cin>>val1;    cout<<endl;
+            for(int i = val; i <= val1; i++){
+                cout<<setw(3)<<i<<"! = "<<Examples().factorialR(i)<<endl;
+            }
             break;
         default:
             cout<<"Wrong choice"<<endl;
