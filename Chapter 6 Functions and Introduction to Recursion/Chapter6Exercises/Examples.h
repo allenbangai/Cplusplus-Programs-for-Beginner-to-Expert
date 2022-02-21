@@ -87,6 +87,13 @@ public:
      */
     unsigned long fibonacci( unsigned long num);
     
+    /**
+     * Iterative definition of method fibonacci
+     * This function takes a number as input parameter and output the nth fibonacci number of the fibonacci sequence
+     * @param num
+     * @return 
+     * It returns the nth fibonacci number of the fibonacci sequence
+     */
     unsigned long fibonacci1( unsigned long num);
     
     Examples(const Examples& orig);
