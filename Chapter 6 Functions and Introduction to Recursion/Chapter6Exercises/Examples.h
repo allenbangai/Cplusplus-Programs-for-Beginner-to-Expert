@@ -63,11 +63,13 @@ public:
     
     /**
      * Recursive definition of function factorialR
-     * The function factorial takes a number and 
+     * The function factorial takes a number as input parameter and returns it factorial
      * @param num
      * @return 
      */
     unsigned long factorialR( unsigned long num);
+    
+    unsigned long factorial( unsigned long num);
     
     Examples(const Examples& orig);
     virtual ~Examples();
