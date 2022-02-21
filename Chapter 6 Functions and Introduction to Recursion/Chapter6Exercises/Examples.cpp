@@ -27,10 +27,10 @@ double Examples::square(double val){
     return val*val;
 }
 
-template <typename T>
-T Examples::product(T x1, T x2, T x3){
-    return x1*x2*x3;
-}
+//template <typename T>
+//T Examples::product(T x1, T x2, T x3){
+//    return x1*x2*x3;
+//}
 
 Examples::Examples(const Examples& orig) {
 }

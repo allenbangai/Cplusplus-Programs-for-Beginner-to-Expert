@@ -64,7 +64,15 @@ int main(int argc, char** argv) {
             volume = Examples().boxVolume(2, 2);
             cout<<"The volume of the box with length 2 and width 2 is: "<<volume<<endl;
             volume = Examples().boxVolume(20, 2, 2);
-            cout<<"The volume of the box with length 20, width 2 and height 2 is: "<<volume<<endl;            
+            cout<<"The volume of the box with length 20, width 2 and height 2 is: "<<volume<<endl;
+            break;
+        case 7:
+            cout<<"var"endl;
+            cout<<"the product of 1, 2 and 3 is: "<<Examples().product(1, 2, 3)<<endl;
+            break;
+        case 8:
+            int square = new Examples().square(3);
+            cout<<"Answer is: "<<square<<endl;
     }
     return 0;
 }
