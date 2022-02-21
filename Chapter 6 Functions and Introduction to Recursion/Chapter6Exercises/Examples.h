@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/class.h to edit this template
  */
-
+#include <iostream>
 /* 
  * File:   Examples.h
  * Author: DELL
@@ -12,6 +12,8 @@
 
 #ifndef EXAMPLES_H
 #define EXAMPLES_H
+
+using namespace std;
 
 class Examples {
 public:
