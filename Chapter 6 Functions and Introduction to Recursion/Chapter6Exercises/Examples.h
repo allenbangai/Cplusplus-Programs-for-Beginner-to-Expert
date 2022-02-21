@@ -78,7 +78,15 @@ public:
      */
     unsigned long factorial( unsigned long num);
     
-    unsigned long fibonacci(uni)
+    /**
+     * Recursive definition of function fibonacci
+     * This function takes a number as input parameter and output the nth fibonacci number of the fibonacci sequence
+     * @param num
+     * @return 
+     * It returns the nth fibonacci number of the fibonacci sequence
+     */
+    unsigned long fibonacci( unsigned long num);
+    
     Examples(const Examples& orig);
     virtual ~Examples();
 private:
