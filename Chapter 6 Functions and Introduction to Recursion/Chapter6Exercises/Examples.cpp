@@ -33,9 +33,16 @@ unsigned long Examples::factorial(unsigned long num){
     {
         val = val*(num-i);
     }
-    return val;
-    
-}
+    return val;    
+}//end factorial
+
+unsigned long Examples::factorialR(unsigned long num){
+    if(num <= 1){
+        return num;
+    }else{
+        return num * factorialR(num - 1);
+    }
+}//end factorialR
 
 Examples::Examples(const Examples& orig) {
 }
