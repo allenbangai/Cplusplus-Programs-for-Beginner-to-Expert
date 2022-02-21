@@ -78,6 +78,7 @@ public:
      */
     unsigned long factorial( unsigned long num);
     
+    unsigned long fibonacci(uni)
     Examples(const Examples& orig);
     virtual ~Examples();
 private:
