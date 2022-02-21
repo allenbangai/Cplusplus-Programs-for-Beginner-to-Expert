@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
             cout<<"Enter value of factorial you wish to find for a second time: ";
             cin>>val;
             cout<<endl;
-            cout<<"The factorial of "<<val<<" is: "<<Examples().factorialR(val);
+            cout<<"The factorial of "<<val<<" is: "<<Examples().factorialR(val)<<endl;
             break;
         case 10:
             /**
@@ -102,7 +102,7 @@ int main(int argc, char** argv) {
              * @param argv
              * @return 
              */
-            cout<<"Enter range of values you wish to find their factorial /n "
+            cout<<"Enter range of values you wish to find their factorial \n"
                     "Where the first value should be larger than the second one: ";
             cin>>val;    cout<<endl;
             cin>>val1;    cout<<endl;
