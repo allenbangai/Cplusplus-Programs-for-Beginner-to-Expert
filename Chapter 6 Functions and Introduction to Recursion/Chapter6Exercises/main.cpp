@@ -32,6 +32,7 @@ inline double cube(const double side){
  */
 int main(int argc, char** argv) {
     int choice;
+    int val;
     int square;
     cout<<"Enter of choice of program u wish to run"<<endl;
     cin>>choice;
@@ -76,6 +77,18 @@ int main(int argc, char** argv) {
         case 8:
             cout<<"Answer is: "<<Examples().square(12)<<endl;
             cout<<"Answer is: "<<Examples().square(8.5)<<endl;
+            break;
+        case 9:
+            /**
+             * Implementing method factorial() from Examples.h
+             * @param argc
+             * @param argv
+             * @return 
+             */
+            cout<<"Enter value which you wish to find it factorial: ";
+            cin>>val;
+            cout<<endl;
+            cout<<"The factorial of "<<val<<" is: "<<Examples().factorial(10);
             break;
         default:
             cout<<"Wrong choice"<<endl;
