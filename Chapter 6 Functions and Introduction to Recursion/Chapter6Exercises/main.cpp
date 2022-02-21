@@ -118,6 +118,9 @@ int main(int argc, char** argv) {
             for(int i = val; i <= val; i++){
                 cout<<"The fibonacci("<<i<<") is: "<<Examples().fibonacci(i)<<endl;
             }
+            cout<<"The fibonacci("<<50<<") is: "<<Examples().fibonacci(50)<<endl;
+            cout<<"The fibonacci("<<100<<") is: "<<Examples().fibonacci(100)<<endl;
+            cout<<"The fibonacci("<<101<<") is: "<<Examples().fibonacci(101)<<endl;
             break;
         default:
             cout<<"Wrong choice"<<endl;
