@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/class.h to edit this template
  */
 #include <iostream>
+#include <cmath>
+#include <iomanip>
 /* 
  * File:   Examples.h
  * Author: DELL
