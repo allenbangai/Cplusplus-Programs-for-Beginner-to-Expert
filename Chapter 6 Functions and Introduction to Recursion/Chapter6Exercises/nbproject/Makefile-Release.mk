@@ -35,7 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/ComputerAssisted_Instructions.o \
 	${OBJECTDIR}/Examples.o \
 	${OBJECTDIR}/GameOfChance.o \
 	${OBJECTDIR}/RandomIntegers.o \
@@ -65,11 +64,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/chapter6exercises.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/chapter6exercises ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/ComputerAssisted_Instructions.o: ComputerAssisted_Instructions.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ComputerAssisted_Instructions.o ComputerAssisted_Instructions.cpp
 
 ${OBJECTDIR}/Examples.o: Examples.cpp
 	${MKDIR} -p ${OBJECTDIR}
