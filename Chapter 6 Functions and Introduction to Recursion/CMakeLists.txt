@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(Chapter_6_Functions_and_Introduction_to_Recursion)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Chapter_6_Functions_and_Introduction_to_Recursion main.cpp)
