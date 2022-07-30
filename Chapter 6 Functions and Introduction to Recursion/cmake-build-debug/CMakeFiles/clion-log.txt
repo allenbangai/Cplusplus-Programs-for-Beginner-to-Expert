@@ -1,16 +1,18 @@
 "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Programming\C++ Projects\Cplusplus-Programs-for-Beginner-to-Expert\Chapter 6 Functions and Introduction to Recursion" -B "C:\Programming\C++ Projects\Cplusplus-Programs-for-Beginner-to-Expert\Chapter 6 Functions and Introduction to Recursion\cmake-build-debug"
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
+CMake Warning in CMakeLists.txt:
+  The object file directory
+
+    C:/Programming/C++ Projects/Cplusplus-Programs-for-Beginner-to-Expert/Chapter 6 Functions and Introduction to Recursion/cmake-build-debug/CMakeFiles/Chapter_6_Functions_and_Introduction_to_Recursion.dir/./
+
+  has 205 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    Chapter5Exercises/ComputerAssistedInstruction.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
 -- Generating done
 -- Build files have been written to: C:/Programming/C++ Projects/Cplusplus-Programs-for-Beginner-to-Expert/Chapter 6 Functions and Introduction to Recursion/cmake-build-debug

@@ -10,9 +10,9 @@
  * Created on February 8, 2022, 1:26 AM
  */
 #include <iostream>
-#include "Chapter6Exercises/RandomIntegers.h"
-#include "Chapter6Exercises/GameOfChance.h"
-#include "Chapter6Exercises/Examples.h"
+#include "Chapter6Examples/RandomIntegers.h"
+#include "Chapter6Examples/GameOfChance.h"
+#include "Chapter6Examples/Examples.h"
 #include <cstdlib>
 
 using namespace std;
@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
             break;
         case 7:
             cout<<"The product of 1, 2 and 3 with no implicit template cast is: "<<Examples().product(1, 2, 3)<<endl;
-            cout<<"The product of 1.5, 2.5 and 3.5 with int cast as template as <int> is: "<<Examples().product<int>(1.5, 2.5, 3)<<endl;
+            cout<<"The product of 1.5, 2.5 and 3.5 with int cast as template as <int> is: "<<Examples().product<double>(1.5, 2.5, 3.6)<<endl;
             cout<<"The product of 1.5, 2.5 and 3.5 with no implicit template cast is: "<<Examples().product(1.5, 2.5, 3.5)<<endl;
             break;
         case 8:
