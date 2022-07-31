@@ -13,7 +13,7 @@ auto ComputerAssistedInstruction::getVal2() const {
 }
 
 void ComputerAssistedInstruction::start() {
-    cout<<"Not that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, despite passing it the end"<<endl;
+    cout<<"Note that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, \ndespite passing it the end."<<endl;
     while (constVal != 0){
         init = 0;
         val1 = rand()%9 + 1;
@@ -31,9 +31,9 @@ void ComputerAssistedInstruction::start() {
             constVal = 0;
             double percentage = (countPass/count) * 100;
             if(percentage < 70){
-                cout<<"You scored a "<<percentage<<"\nPlease ask your teacher for extra help."<<endl;
+                cout<<"You scored a "<<percentage<<"%\nPlease ask your teacher for extra help."<<endl;
             }else{
-                cout<<"You scored a "<<percentage<<"\nCongratulations, you are ready to go to the next level!"<<endl;
+                cout<<"You scored a "<<percentage<<"%\nCongratulations, you are ready to go to the next level!"<<endl;
             }
         }
     }
