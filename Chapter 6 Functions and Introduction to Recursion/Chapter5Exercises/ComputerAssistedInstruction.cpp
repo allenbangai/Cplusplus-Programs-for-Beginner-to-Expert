@@ -13,7 +13,9 @@ auto ComputerAssistedInstruction::getVal2() const {
 }
 
 void ComputerAssistedInstruction::start() {
+    cout<<"Not that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, despite passing it the end"<<endl;
     while (constVal != 0){
+        init = 0;
         val1 = rand()%9 + 1;
         val2 = rand()%9 + 1;
         auto answer = 9;
@@ -22,7 +24,18 @@ void ComputerAssistedInstruction::start() {
             cin>>answer;
             cout<<endl;
             response(productCheck(answer));
+            init++;
         } while (!productCheck(answer));
+        count++;
+        if(count == 10){
+            constVal = 0;
+            double percentage = (countPass/count) * 100;
+            if(percentage < 70){
+                cout<<"Please ask your teacher for extra help."<<endl;
+            }else{
+                cout<<"Congratulations, you are ready to go to the next level!"<<endl;
+            }
+        }
     }
 }
 
@@ -41,6 +54,9 @@ ComputerAssistedInstruction::ComputerAssistedInstruction() {
 void ComputerAssistedInstruction::response(bool val) {
     auto var1 = rand()%4 + 1;
     if(val){
+        if(init == 0){
+            countPass++;
+        }
         switch (var1) {
             case 1:
                 cout<<"Very good!\n"<<endl;
@@ -56,6 +72,9 @@ void ComputerAssistedInstruction::response(bool val) {
                 break;
         }
     }else{
+        if(init == 0){
+            countFail++;
+        }
         switch (var1) {
             case 1:
                 cout<<"No. Please try again.\n"<<endl;

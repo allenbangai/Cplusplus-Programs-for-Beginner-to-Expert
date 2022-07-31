@@ -14,6 +14,7 @@ using namespace std;
 
 class ComputerAssistedInstruction {
 private:
+    int init, count = 0, countPass = 0, countFail = 0;
     int constVal = 1;
     int val1;
     int val2;
