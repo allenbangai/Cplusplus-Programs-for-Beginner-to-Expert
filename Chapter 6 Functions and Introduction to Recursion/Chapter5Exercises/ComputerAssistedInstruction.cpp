@@ -31,9 +31,9 @@ void ComputerAssistedInstruction::start() {
             constVal = 0;
             double percentage = (countPass/count) * 100;
             if(percentage < 70){
-                cout<<"Please ask your teacher for extra help."<<endl;
+                cout<<"You scored a "<<percentage<<"\nPlease ask your teacher for extra help."<<endl;
             }else{
-                cout<<"Congratulations, you are ready to go to the next level!"<<endl;
+                cout<<"You scored a "<<percentage<<"\nCongratulations, you are ready to go to the next level!"<<endl;
             }
         }
     }
