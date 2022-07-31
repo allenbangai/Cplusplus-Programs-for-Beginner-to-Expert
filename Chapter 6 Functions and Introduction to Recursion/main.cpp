@@ -13,6 +13,7 @@
 #include "Chapter6Examples/RandomIntegers.h"
 #include "Chapter6Examples/GameOfChance.h"
 #include "Chapter6Examples/Examples.h"
+#include "Chapter5Exercises/ComputerAssistedInstruction.h"
 #include <cstdlib>
 
 using namespace std;
@@ -128,6 +129,9 @@ int main(int argc, char** argv) {
             cout<<"Enter the number through which you want to find it's fibonacci: ";
             cin>>val;
             cout<<endl<<"The fibonacci("<<val<<") is: "<<Examples().fibonacci1(val)<<endl;
+            break;
+        case 13:
+            ComputerAssistedInstruction().start();
             break;
         default:
             cout<<"Wrong choice"<<endl;

@@ -21,6 +21,8 @@ private:
 public:
     ComputerAssistedInstruction();
 
+    void response(bool);
+
     bool productCheck(int );
 
     auto getVal1() const;

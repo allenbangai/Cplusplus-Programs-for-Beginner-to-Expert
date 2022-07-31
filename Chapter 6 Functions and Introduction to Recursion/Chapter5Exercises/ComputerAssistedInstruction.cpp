@@ -14,7 +14,6 @@ auto ComputerAssistedInstruction::getVal2() const {
 
 void ComputerAssistedInstruction::start() {
     while (constVal != 0){
-        srand(time(0));
         val1 = rand()%9 + 1;
         val2 = rand()%9 + 1;
         auto answer = 9;
@@ -22,18 +21,9 @@ void ComputerAssistedInstruction::start() {
             cout<<"How much is "<<val1<<" times "<<val2<<"? ";
             cin>>answer;
             cout<<endl;
-            if(productCheck(answer)){
-                cout<<"Very Good, take another exercise"<<endl;
-            }else{
-                cout<<"No. Please try again"<<endl;
-            }
-
+            response(productCheck(answer));
         } while (!productCheck(answer));
-        cout<<"enter 0 to stop and 1 to continue: ";
-        cin>>constVal;
-        cout<<endl;
     }
-
 }
 
 bool ComputerAssistedInstruction::productCheck(int val) {
@@ -41,5 +31,44 @@ bool ComputerAssistedInstruction::productCheck(int val) {
         return true;
     }else{
         return false;
+    }
+}
+
+ComputerAssistedInstruction::ComputerAssistedInstruction() {
+
+}
+
+void ComputerAssistedInstruction::response(bool val) {
+    auto var1 = rand()%4 + 1;
+    if(val){
+        switch (var1) {
+            case 1:
+                cout<<"Very good!\n"<<endl;
+                break;
+            case 2:
+                cout<<"Excellent!\n"<<endl;
+                break;
+            case 3:
+                cout<<"Nice work!\n"<<endl;
+                break;
+            case 4:
+                cout<<"Keep up the good work!\n"<<endl;
+                break;
+        }
+    }else{
+        switch (var1) {
+            case 1:
+                cout<<"No. Please try again.\n"<<endl;
+                break;
+            case 2:
+                cout<<"Wrong. Try once more.\n"<<endl;
+                break;
+            case 3:
+                cout<<"Don't give up!\n"<<endl;
+                break;
+            case 4:
+                cout<<"No. Keep trying.\n"<<endl;
+                break;
+        }
     }
 }
