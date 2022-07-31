@@ -14,26 +14,38 @@ auto ComputerAssistedInstruction::getVal2() const {
 
 void ComputerAssistedInstruction::start() {
     cout<<"Note that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, \ndespite passing it the end."<<endl;
+    cout<<"Choose between difficulty 1, 2 and 3"<<endl;
+    cin>>constVal;
+    setDifficulty(constVal);
     while (constVal != 0){
         init = 0;
-        val1 = rand()%9 + 1;
-        val2 = rand()%9 + 1;
+        val1 = rand()%endRand + startRand;
+        val2 = rand()%endRand + startRand;
         auto answer = 9;
         do{
-            cout<<"How much is "<<val1<<" times "<<val2<<"? ";
+            cout<<"How much is "<<val1<<" times "<<val2<<"? "<<endl;
             cin>>answer;
-            cout<<endl;
             response(productCheck(answer));
             init++;
         } while (!productCheck(answer));
         count++;
-        if(count == 10){
+        if(count >= 5){
             constVal = 0;
-            double percentage = (countPass/count) * 100;
+            float percentage = (float )((countPass/count) * 100);
+            cout<<countPass<<" --- "<<count<<endl;
+            count = 0;
             if(percentage < 70){
                 cout<<"You scored a "<<percentage<<"%\nPlease ask your teacher for extra help."<<endl;
+                cout<<"If u want to try again, chose difficulty between 1, 2, and 3 or chose 0 to end program."<<endl;
+                cin>>constVal;
+                setDifficulty(constVal);
+            }else if(percentage >= 70 && constVal != 3){
+                cout<<"You scored a "<<percentage<<"%\nCongratulations, you are ready to go to the next level."<<endl;
+                cout<<"To go to the next level, chose difficulty between 1, 2, and 3 or chose 0 to end program."<<endl;
+                cin>>constVal;
+                setDifficulty(constVal);
             }else{
-                cout<<"You scored a "<<percentage<<"%\nCongratulations, you are ready to go to the next level!"<<endl;
+                cout<<"You scored a "<<percentage<<"%\nCongratulations, you are now an expert in arithmetic operation."<<endl;
             }
         }
     }
