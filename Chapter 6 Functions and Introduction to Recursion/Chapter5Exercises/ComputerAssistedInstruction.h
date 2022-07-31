@@ -14,13 +14,11 @@ using namespace std;
 
 class ComputerAssistedInstruction {
 private:
-    int init, count = 0, countPass = 0, countFail = 0;
+    int init, count = 0, countPass = 0;
     int constVal = 1;
     int val1;
     int val2;
-
-public:
-    ComputerAssistedInstruction();
+    int startRand, endRand;
 
     void response(bool);
 
@@ -30,9 +28,12 @@ public:
 
     auto getVal2() const;
 
-    void setVal1(int val1);
+    void setDifficulty(int );
 
     void setVal2(int val2);
+
+public:
+    ComputerAssistedInstruction();
 
     void start();
 };

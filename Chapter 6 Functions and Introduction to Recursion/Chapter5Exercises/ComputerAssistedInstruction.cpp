@@ -72,9 +72,6 @@ void ComputerAssistedInstruction::response(bool val) {
                 break;
         }
     }else{
-        if(init == 0){
-            countFail++;
-        }
         switch (var1) {
             case 1:
                 cout<<"No. Please try again.\n"<<endl;
@@ -89,5 +86,22 @@ void ComputerAssistedInstruction::response(bool val) {
                 cout<<"No. Keep trying.\n"<<endl;
                 break;
         }
+    }
+}
+
+void ComputerAssistedInstruction::setDifficulty(int val = 1) {
+    switch (val) {
+        case 1:
+            startRand = 1;
+            endRand = 9;
+            break;
+        case 2:
+            startRand = 10;
+            endRand = 50;
+            break;
+        case 3:
+            startRand = 51;
+            endRand = 101;
+            break;
     }
 }
