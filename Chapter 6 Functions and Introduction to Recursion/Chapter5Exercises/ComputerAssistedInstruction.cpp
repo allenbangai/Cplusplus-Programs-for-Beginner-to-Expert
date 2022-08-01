@@ -130,8 +130,6 @@ void ComputerAssistedInstruction::response(bool val) {
     }
 }
 
-
-
 void ComputerAssistedInstruction::setDifficulty(int val = 1) {
     switch (val) {
         case 1:
