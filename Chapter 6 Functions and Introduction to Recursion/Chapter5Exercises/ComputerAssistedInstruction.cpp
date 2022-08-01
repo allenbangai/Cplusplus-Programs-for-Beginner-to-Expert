@@ -14,8 +14,8 @@ auto ComputerAssistedInstruction::getVal2() const {
 
 void ComputerAssistedInstruction::start() {
     cout<<"Note that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, \ndespite passing it the end."<<endl;
-    cout<<"Choose between difficulty 1, 2 and 3"<<endl;
-    cin>>constVal;
+    //cout<<"Choose between difficulty 1, 2 and 3"<<endl;
+    //cin>>constVal;
     setDifficulty(constVal);
     while (constVal != 0){
         init = 0;
@@ -52,10 +52,31 @@ void ComputerAssistedInstruction::start() {
 }
 
 bool ComputerAssistedInstruction::productCheck(int val) {
-    if(val == getVal1() * getVal2()){
-        return true;
-    }else{
-        return false;
+    switch (choice) {
+        case 1:
+            if(val == getVal1() + getVal2()){
+                return true;
+            }else{
+                return false;
+            }
+        case 2:
+            if(val == getVal1() - getVal2()){
+                return true;
+            }else{
+                return false;
+            }
+        case 3:
+            if(val == getVal1() * getVal2()){
+                return true;
+            }else{
+                return false;
+            }
+        case 4:
+            if(val == getVal1() / getVal2()){
+                return true;
+            }else{
+                return false;
+            }
     }
 }
 
@@ -101,6 +122,8 @@ void ComputerAssistedInstruction::response(bool val) {
     }
 }
 
+
+
 void ComputerAssistedInstruction::setDifficulty(int val = 1) {
     switch (val) {
         case 1:
@@ -114,6 +137,28 @@ void ComputerAssistedInstruction::setDifficulty(int val = 1) {
         case 3:
             startRand = 51;
             endRand = 101;
+            break;
+    }
+}
+
+void ComputerAssistedInstruction::setOperation(int val) {
+    if(val == 5){
+        choice = rand()%4 + 1;
+    }else{
+        choice = val;
+    }
+    switch (choice) {
+        case 1:
+            cout<<"How much is "<<val1<<" + "<<val2<<" ? "<<endl;
+            break;
+        case 2:
+            cout<<"How much is "<<val1<<" - "<<val2<<" ? "<<endl;
+            break;
+        case 3:
+            cout<<"How much is "<<val1<<" * "<<val2<<" ? "<<endl;
+            break;
+        case 4:
+            cout<<"How much is "<<val1<<" / "<<val2<<" ? "<<endl;
             break;
     }
 }

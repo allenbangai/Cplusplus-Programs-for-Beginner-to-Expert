@@ -15,9 +15,9 @@ using namespace std;
 class ComputerAssistedInstruction {
 private:
     float init, count = 0, countPass = 0;
-    int constVal = 1;
-    int val1;
-    int val2;
+    const int add = 1, sub = 2, mult = 3, div = 4;
+    int constVal = 1, val1, val2;
+    int choice;
     int startRand, endRand;
 
     void response(bool);
@@ -30,7 +30,7 @@ private:
 
     void setDifficulty(int );
 
-    void setVal2(int val2);
+    void setOperation(int );
 
 public:
     ComputerAssistedInstruction();
