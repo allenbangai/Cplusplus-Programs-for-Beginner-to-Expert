@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Chapter_7_Array_and_Vectors",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Chapter_7_Array_and_Vectors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Chapter_7_Array_and_Vectors-Debug-ddfe84a6fe1c3e1baf8d.json",
+					"name" : "Chapter_7_Array_and_Vectors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Programming/C++ Projects/Cplusplus-Programs-for-Beginner-to-Expert/Chapter 7 Array and Vectors/cmake-build-debug",
+		"source" : "C:/Programming/C++ Projects/Cplusplus-Programs-for-Beginner-to-Expert/Chapter 7 Array and Vectors"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
