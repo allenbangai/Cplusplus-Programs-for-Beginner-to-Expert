@@ -26,9 +26,10 @@ void ComputerAssistedInstruction::start() {
         init = 0;
         val1 = rand()%endRand + startRand;
         val2 = rand()%endRand + startRand;
+        setOperation(operation);
         auto answer = 9;
         do{
-            setOperation(operation);
+            printOperation();
             cin>>answer;
             response(productCheck(answer));
             init++;
@@ -37,6 +38,7 @@ void ComputerAssistedInstruction::start() {
         if(count >= 10){
             constVal = 0;
             auto percentage = (float )((countPass/count) * 100);
+            cout<<countPass<<" --- "<<count<<endl;
             count = 0;
             countPass = 0;
             if(percentage < 70){
@@ -153,6 +155,9 @@ void ComputerAssistedInstruction::setOperation(int val) {
     }else{
         choice = val;
     }
+}
+
+void ComputerAssistedInstruction::printOperation() {
     switch (choice) {
         case 1:
             cout<<"How much is "<<val1<<" + "<<val2<<" ? "<<endl;

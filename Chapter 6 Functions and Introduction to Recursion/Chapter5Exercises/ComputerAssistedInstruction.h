@@ -32,6 +32,8 @@ private:
 
     void setOperation(int );
 
+    void printOperation();
+
 public:
     ComputerAssistedInstruction();
 
