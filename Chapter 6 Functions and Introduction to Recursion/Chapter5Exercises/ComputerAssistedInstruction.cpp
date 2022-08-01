@@ -29,11 +29,11 @@ void ComputerAssistedInstruction::start() {
             init++;
         } while (!productCheck(answer));
         count++;
-        if(count >= 5){
+        if(count >= 10){
             constVal = 0;
             float percentage = (float )((countPass/count) * 100);
-            cout<<countPass<<" --- "<<count<<endl;
             count = 0;
+            countPass = 0;
             if(percentage < 70){
                 cout<<"You scored a "<<percentage<<"%\nPlease ask your teacher for extra help."<<endl;
                 cout<<"If u want to try again, chose difficulty between 1, 2, and 3 or chose 0 to end program."<<endl;
