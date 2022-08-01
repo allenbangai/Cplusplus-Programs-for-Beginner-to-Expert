@@ -14,8 +14,13 @@ auto ComputerAssistedInstruction::getVal2() const {
 
 void ComputerAssistedInstruction::start() {
     cout<<"Note that if u fail the answer for the questions in the first trial, it will be counted as a failed answer, \ndespite passing it the end."<<endl;
-    //cout<<"Choose between difficulty 1, 2 and 3"<<endl;
-    //cin>>constVal;
+    cout<<"Chose your own type of arithmetic problem, \n"
+          "An option of 1 means addition problems only, \n"
+          "2 means subtraction problems only, \n"
+          "3 means multiplication problems only, \n"
+          "4 means division problems only and \n"
+          "5 means a random mixture of all these types."<<endl;
+    cin>>operation;
     setDifficulty(constVal);
     while (constVal != 0){
         init = 0;
@@ -23,7 +28,7 @@ void ComputerAssistedInstruction::start() {
         val2 = rand()%endRand + startRand;
         auto answer = 9;
         do{
-            cout<<"How much is "<<val1<<" times "<<val2<<"? "<<endl;
+            setOperation(operation);
             cin>>answer;
             response(productCheck(answer));
             init++;
@@ -31,7 +36,7 @@ void ComputerAssistedInstruction::start() {
         count++;
         if(count >= 10){
             constVal = 0;
-            float percentage = (float )((countPass/count) * 100);
+            auto percentage = (float )((countPass/count) * 100);
             count = 0;
             countPass = 0;
             if(percentage < 70){
@@ -78,6 +83,7 @@ bool ComputerAssistedInstruction::productCheck(int val) {
                 return false;
             }
     }
+    return false;
 }
 
 ComputerAssistedInstruction::ComputerAssistedInstruction() {

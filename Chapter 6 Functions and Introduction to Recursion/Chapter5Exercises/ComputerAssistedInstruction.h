@@ -17,7 +17,7 @@ private:
     float init, count = 0, countPass = 0;
     const int add = 1, sub = 2, mult = 3, div = 4;
     int constVal = 1, val1, val2;
-    int choice;
+    int choice, operation;
     int startRand, endRand;
 
     void response(bool);
