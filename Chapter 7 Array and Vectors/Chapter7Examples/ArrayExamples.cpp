@@ -39,8 +39,8 @@ void ArrayExamples::dieFrequency() {
 
     srand( time( 0 ) ); // seed random number generator
 
-    cout<<"Enter number of roll you want the die to perform, not that it cannot be less than 6 and must be a multiple\n"
-          " of 6 else it will be brought to the closest greatest multiple of 6"<<endl;
+    cout<<"Enter number of roll you want the die to perform, not that it cannot be less than 6 and must be a multiple \n"
+          "of 6 else it will be brought to the closest greatest multiple of 6"<<endl;
     cin>>rollNum;
     while(rollNum % 6 != 0){
         rollNum++;
@@ -48,12 +48,12 @@ void ArrayExamples::dieFrequency() {
 
     // roll die 6,000,000 times; use die value as frequency index
     for ( int roll = 1; roll <= rollNum; ++roll ){
-        ++frequency[ 1 + rand() % 6 ];
+        ++frequency[ rand() % 6 ];
     }
 
     cout << "Face" << setw( 13 ) << "Frequency" << endl;
     // output each array element's value
-    for ( int face = 1; face < arraySize; ++face ){
+    for ( int face = 0; face < arraySize; ++face ){
         cout << setw( 4 ) << face << setw( 13 ) << frequency[ face ]<<endl;
     }
 }// end dieFrequency
