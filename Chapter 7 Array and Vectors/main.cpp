@@ -7,7 +7,11 @@ int main() {
     cin>>choice;
     switch (choice) {
         case 1:
-
+            ArrayExamples().barChart();
+            break;
+        default:
+            cout<<"Wrong choice"<<endl;
+            break;
     }
     return 0;
 }

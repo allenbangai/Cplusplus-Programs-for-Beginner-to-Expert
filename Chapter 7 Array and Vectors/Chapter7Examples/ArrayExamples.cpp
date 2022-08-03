@@ -19,8 +19,8 @@ void ArrayExamples::barChart() {
         // output bar labels ("0-9:", ..., "90-99:", "100:" )
         if(i == 0){
             cout << " 0-9: ";
-        }else if(i == 100){
-            cout << " 1000: ";
+        }else if(i == 10){
+            cout <<"  100: ";
         }else{
             cout << i * 10 << "-" << ( i * 10 ) + 9 << ": ";
         }
