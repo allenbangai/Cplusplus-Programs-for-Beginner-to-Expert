@@ -55,6 +55,12 @@ build CMakeFiles/Chapter_7_Array_and_Vectors.dir/main.cpp.obj: CXX_COMPILER__Cha
   OBJECT_DIR = CMakeFiles\Chapter_7_Array_and_Vectors.dir
   OBJECT_FILE_DIR = CMakeFiles\Chapter_7_Array_and_Vectors.dir
 
+build CMakeFiles/Chapter_7_Array_and_Vectors.dir/Chapter7Examples/ArrayExamples.cpp.obj: CXX_COMPILER__Chapter_7_Array_and_Vectors_Debug C$:/Programming/C++$ Projects/Cplusplus-Programs-for-Beginner-to-Expert/Chapter$ 7$ Array$ and$ Vectors/Chapter7Examples/ArrayExamples.cpp || cmake_object_order_depends_target_Chapter_7_Array_and_Vectors
+  DEP_FILE = CMakeFiles\Chapter_7_Array_and_Vectors.dir\Chapter7Examples\ArrayExamples.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Chapter_7_Array_and_Vectors.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chapter_7_Array_and_Vectors.dir\Chapter7Examples
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Chapter_7_Array_and_Vectors
@@ -63,7 +69,7 @@ build CMakeFiles/Chapter_7_Array_and_Vectors.dir/main.cpp.obj: CXX_COMPILER__Cha
 #############################################
 # Link the executable Chapter_7_Array_and_Vectors.exe
 
-build Chapter_7_Array_and_Vectors.exe: CXX_EXECUTABLE_LINKER__Chapter_7_Array_and_Vectors_Debug CMakeFiles/Chapter_7_Array_and_Vectors.dir/main.cpp.obj
+build Chapter_7_Array_and_Vectors.exe: CXX_EXECUTABLE_LINKER__Chapter_7_Array_and_Vectors_Debug CMakeFiles/Chapter_7_Array_and_Vectors.dir/main.cpp.obj CMakeFiles/Chapter_7_Array_and_Vectors.dir/Chapter7Examples/ArrayExamples.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Chapter_7_Array_and_Vectors.dir
