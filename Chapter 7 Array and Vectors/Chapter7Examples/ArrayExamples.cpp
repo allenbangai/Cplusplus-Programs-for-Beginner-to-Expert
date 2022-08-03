@@ -56,5 +56,10 @@ void ArrayExamples::dieFrequency() {
     for ( int face = 0; face < arraySize; ++face ){
         cout << setw( 4 ) << face + 1 << setw( 13 ) << frequency[ face ]<<endl;
     }
-}// end dieFrequency
+}
+
+void ArrayExamples::responseFrequency() {
+
+}
+// end dieFrequency
 
