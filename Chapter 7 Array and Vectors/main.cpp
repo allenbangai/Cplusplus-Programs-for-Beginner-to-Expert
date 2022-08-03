@@ -4,7 +4,8 @@ int main() {
 
     cout<<"Choose from the below options to select between the implemented chapter 7 exercises and examples \n"
           "Choose 1 for Bar Charts Example\n"
-          "Choose 2 for die frequency example"<<endl;
+          "Choose 2 for die frequency example\n"
+          "Choose 3 for student response frequency"<<endl;
     cin>>choice;
     switch (choice) {
         case 1:
@@ -12,6 +13,10 @@ int main() {
             break;
         case 2:
             ArrayExamples().dieFrequency();
+            break;
+        case 3:
+            ArrayExamples().responseFrequency();
+            break;
         default:
             cout<<"Wrong choice"<<endl;
             break;

@@ -78,8 +78,8 @@ void ArrayExamples::responseFrequency() {
     cout << "Rating" << setw( 17 ) << "Frequency" << endl;
 
     // output each array element's value
-    for ( int rating = 1; rating < frequencySize; ++rating ){
-        cout << setw( 6 ) << rating << setw( 17 ) << frequency[ rating ]<<endl;
+    for ( int rating = 0; rating < frequencySize; ++rating ){
+        cout << setw( 6 ) << rating + 1 << setw( 17 ) << frequency[ rating ]<<endl;
     }
 } // end responseFrequency
 
