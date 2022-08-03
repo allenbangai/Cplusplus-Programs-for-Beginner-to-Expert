@@ -4,6 +4,10 @@
 
 #include "ArrayExamples.h"
 
+ArrayExamples::ArrayExamples() {
+
+}
+
 void ArrayExamples::barChart() {
     const int arraySize = 11;
     int n[ arraySize ] = { 0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1 };
@@ -27,4 +31,5 @@ void ArrayExamples::barChart() {
         }
         cout << endl;
     }
-} // end barChart
+}
+// end barChart

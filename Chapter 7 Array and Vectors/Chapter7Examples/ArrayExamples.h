@@ -13,6 +13,8 @@ class ArrayExamples {
 private:
 
 public:
+    ArrayExamples();
+
     void barChart();
 
 };// std

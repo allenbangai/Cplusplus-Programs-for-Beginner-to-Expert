@@ -1,6 +1,13 @@
-#include <iostream>
-
+#include "Chapter7Examples/ArrayExamples.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int choice;
+
+    cout<<"Choose from the below options to select between the implemented chapter 7 exercises and examples \n"
+          "Choose 1 for Bar Charts Example\n"<<endl;
+    cin>>choice;
+    switch (choice) {
+        case 1:
+
+    }
     return 0;
 }
