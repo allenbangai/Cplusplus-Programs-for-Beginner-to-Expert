@@ -6,6 +6,10 @@
 #define CHAPTER_7_ARRAY_AND_VECTORS_ARRAYEXAMPLES_H
 
 class ArrayExamples {
+private:
+
+public:
+    void barChart();
 
 };// std
 

@@ -4,5 +4,6 @@
 
 #include "ArrayExamples.h"
 
-namespace std {
-} // std
+void ArrayExamples::barChart() {
+
+}
