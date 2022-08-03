@@ -56,10 +56,31 @@ void ArrayExamples::dieFrequency() {
     for ( int face = 0; face < arraySize; ++face ){
         cout << setw( 4 ) << face + 1 << setw( 13 ) << frequency[ face ]<<endl;
     }
-}
+}// end dieFrequency
 
 void ArrayExamples::responseFrequency() {
+    // define array sizes
+    const int responseSize = 20; // size of array responses
+    const int frequencySize = 5; // size of array frequency
 
-}
-// end dieFrequency
+    // place survey responses in array responses
+    const int responses[ responseSize ] = { 1, 2, 5, 4, 3, 5, 2, 1, 3,
+                                            1, 4, 3, 3, 3, 2, 3, 3, 2, 2, 5 };
+    // initialize frequency counters to 0
+    int frequency[ frequencySize ] = {};
+
+    // for each answer, select responses element and use that value
+    // as frequency subscript to determine element to increment
+    for ( int answer = 0; answer < responseSize; ++answer ){
+        ++frequency[ responses[ answer ] ];
+    }
+
+    cout << "Rating" << setw( 17 ) << "Frequency" << endl;
+
+    // output each array element's value
+    for ( int rating = 1; rating < frequencySize; ++rating ){
+        cout << setw( 6 ) << rating << setw( 17 ) << frequency[ rating ]<<endl;
+    }
+} // end responseFrequency
+
 
