@@ -3,6 +3,8 @@
 //
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -16,6 +18,8 @@ public:
     ArrayExamples();
 
     void barChart();
+
+    void dieFrequency();
 
 };// std
 

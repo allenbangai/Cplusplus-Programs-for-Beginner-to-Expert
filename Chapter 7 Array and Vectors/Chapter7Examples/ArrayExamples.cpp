@@ -32,4 +32,7 @@ void ArrayExamples::barChart() {
         cout << endl;
     }
 }
+
+void ArrayExamples::dieFrequency() {
+}
 // end barChart
