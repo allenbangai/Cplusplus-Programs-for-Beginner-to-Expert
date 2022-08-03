@@ -72,7 +72,7 @@ void ArrayExamples::responseFrequency() {
     // for each answer, select responses element and use that value
     // as frequency subscript to determine element to increment
     for ( int answer = 0; answer < responseSize; ++answer ){
-        ++frequency[ responses[ answer ] ];
+        ++frequency[ responses[ answer ] - 1 ];
     }
 
     cout << "Rating" << setw( 17 ) << "Frequency" << endl;
