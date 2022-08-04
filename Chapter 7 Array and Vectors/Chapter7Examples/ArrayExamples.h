@@ -13,7 +13,7 @@ using namespace std;
 
 class ArrayExamples {
 private:
-    const int arraySize = 3;
+    const static int arraySize = 3;
 
     void staticArrayInit( void ); // function prototype
 

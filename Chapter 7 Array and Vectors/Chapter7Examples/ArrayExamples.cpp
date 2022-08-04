@@ -81,7 +81,7 @@ void ArrayExamples::responseFrequency() {
     for ( int rating = 0; rating < frequencySize; ++rating ){
         cout << setw( 6 ) << rating + 1 << setw( 17 ) << frequency[ rating ]<<endl;
     }
-}
+}// end responseFrequency
 
 void ArrayExamples::static_automaticArrays() {
     // Static arrays are initialized to zero.
@@ -95,8 +95,9 @@ void ArrayExamples::static_automaticArrays() {
     cout << endl;
 }
 
-void ArrayExamples::staticArrayInit(void) {// initializes elements to 0 first time function is called
-    static int array1[3]; // static local array
+void ArrayExamples::staticArrayInit(void) {
+    // initializes elements to 0 first time function is called
+    static int array1[arraySize]; // static local array
 
     cout << "\nValues on entering staticArrayInit:\n";
 
@@ -112,8 +113,20 @@ void ArrayExamples::staticArrayInit(void) {// initializes elements to 0 first ti
 }// end function staticArrayInit
 
 void ArrayExamples::automaticArrayInit(void) {
+    // initializes elements each time function is called
+    int array2[ arraySize ] = { 1, 2, 3 }; // automatic local array
 
-}
-// end responseFrequency
+    cout << "\n\nValues on entering automaticArrayInit:\n";
+    // output contents of array2
+    for ( int i = 0; i < arraySize; ++i )
+        cout << "array2[" << i << "] = " << array2[ i ] << " ";
+
+    cout << "\nValues on exiting automaticArrayInit:\n";
+
+    // modify and output contents of array2
+    for ( int j = 0; j < arraySize; ++j )
+        cout << "array2[" << j << "] = " << ( array2[ j ] += 5 ) << " ";
+}// end function automaticArrayInit
+
 
 
