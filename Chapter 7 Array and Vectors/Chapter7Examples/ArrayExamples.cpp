@@ -95,9 +95,21 @@ void ArrayExamples::static_automaticArrays() {
     cout << endl;
 }
 
-void ArrayExamples::staticArrayInit(void) {
+void ArrayExamples::staticArrayInit(void) {// initializes elements to 0 first time function is called
+    static int array1[3]; // static local array
 
-}
+    cout << "\nValues on entering staticArrayInit:\n";
+
+    // output contents of array1
+    for ( int i = 0; i < arraySize; ++i )
+        cout << "array1[" << i << "] = " << array1[ i ] << " ";
+
+    cout << "\nValues on exiting staticArrayInit:\n";
+
+    // modify and output contents of array1
+    for ( int j = 0; j < arraySize; ++j )
+        cout << "array1[" << j << "] = " << ( array1[ j ] += 5 ) << " ";
+}// end function staticArrayInit
 
 void ArrayExamples::automaticArrayInit(void) {
 
