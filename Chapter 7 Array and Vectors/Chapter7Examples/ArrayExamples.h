@@ -13,6 +13,11 @@ using namespace std;
 
 class ArrayExamples {
 private:
+    const int arraySize = 3;
+
+    void staticArrayInit( void ); // function prototype
+
+    void automaticArrayInit( void ); // function prototype
 
 public:
     ArrayExamples();

@@ -84,6 +84,22 @@ void ArrayExamples::responseFrequency() {
 }
 
 void ArrayExamples::static_automaticArrays() {
+    // Static arrays are initialized to zero.
+    cout << "First call to each function:\n";
+    staticArrayInit();
+    automaticArrayInit();
+
+    cout << "\n\nSecond call to each function:\n";
+    staticArrayInit();
+    automaticArrayInit();
+    cout << endl;
+}
+
+void ArrayExamples::staticArrayInit(void) {
+
+}
+
+void ArrayExamples::automaticArrayInit(void) {
 
 }
 // end responseFrequency
