@@ -28,6 +28,8 @@ public:
      */
     void responseFrequency();
 
+    void static_automaticArrays();
+
 };// std
 
 #endif //CHAPTER_7_ARRAY_AND_VECTORS_ARRAYEXAMPLES_H

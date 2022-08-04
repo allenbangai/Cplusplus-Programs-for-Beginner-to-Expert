@@ -81,6 +81,11 @@ void ArrayExamples::responseFrequency() {
     for ( int rating = 0; rating < frequencySize; ++rating ){
         cout << setw( 6 ) << rating + 1 << setw( 17 ) << frequency[ rating ]<<endl;
     }
-} // end responseFrequency
+}
+
+void ArrayExamples::static_automaticArrays() {
+
+}
+// end responseFrequency
 
 
